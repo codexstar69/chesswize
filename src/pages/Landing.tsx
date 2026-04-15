@@ -1301,12 +1301,6 @@ export default function Landing() {
       <FAQ />
       <Pricing />
       <ContactFormSection />
-      <StatBar />
-      <ScreenTimeCalculator />
-      <GrowthProjector />
-      <SuccessStories />
-      <StarPerformers />
-      <CohortPlacementQuiz />
       <Footer />
       <LiveBookingToast />
       <StickyMobileCTA />
