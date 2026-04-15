@@ -174,7 +174,7 @@ function Hero() {
       
       {/* Generated hero background - remove this div to revert */}
       <div className="absolute inset-0 opacity-[0.03] mix-blend-multiply pointer-events-none">
-        <img src="/images/hero-bg-pattern.png" alt="" className="w-full h-full object-cover" loading="eager" width="1376" height="768" />
+        <img src="/images/hero-bg-pattern.webp" alt="" className="w-full h-full object-cover" loading="eager" width="1376" height="768" />
       </div>
       
       <div className="max-w-7xl mx-auto px-4 md:px-6 flex flex-col lg:flex-row items-center gap-12 lg:gap-12 relative z-10">
@@ -231,7 +231,7 @@ function Hero() {
         <div className="w-full lg:w-5/12 relative mt-6 lg:mt-0">
           {/* Generated hero girl image - visible on mobile, replaces old hero image. Remove this block to revert */}
           <div className="lg:hidden w-full mb-6 rounded-sm overflow-hidden border-4 border-[#111111] shadow-[6px_6px_0px_#FFD600]">
-            <img src="/images/hero-girl-chess.png" alt="Young Indian girl smiling while playing chess" className="w-full aspect-[4/3] object-cover" loading="eager" fetchPriority="high" width="896" height="1200" />
+            <img src="/images/hero-girl-chess.webp" alt="Young Indian girl smiling while playing chess" className="w-full aspect-[4/3] object-cover" loading="eager" fetchPriority="high" width="896" height="1200" />
           </div>
           <div className="hidden lg:block absolute top-4 -right-4 w-full h-full bg-[#FFD600] border-4 border-[#111111]" />
           <div className="bg-white border-4 border-[#111111] p-6 md:p-10 relative z-10 flex flex-col">
@@ -355,7 +355,7 @@ function DeepCognitiveQuiz() {
           <div className="text-center">
             {/* Generated quiz child image - remove this block to revert */}
             <div className="w-32 h-32 md:w-40 md:h-40 mx-auto mb-6 rounded-full overflow-hidden border-4 border-[#FFD600] shadow-[4px_4px_0px_#FFD600]">
-              <img src="/images/quiz-child-thinking.png" alt="Child thinking about chess" className="w-full h-full object-cover" loading="lazy" width="1024" height="1024" />
+              <img src="/images/quiz-child-thinking.webp" alt="Child thinking about chess" className="w-full h-full object-cover" loading="lazy" width="1024" height="1024" />
             </div>
             <div className="inline-flex items-center gap-2 bg-[#111111] border-2 border-gray-800 text-gray-400 font-black text-[10px] uppercase tracking-[0.2em] px-4 py-2 mb-6">
               <Search className="w-4 h-4" /> Quick Assessment
@@ -475,19 +475,19 @@ function NeurologicalImpact() {
               step: "Step 01", title: "Better Focus & Patience",
               desc: "In chess, one careless move can lose the game. Kids naturally learn to slow down, think carefully, and pay attention — skills that directly improve homework and exam performance.",
               metric: "Parents report 2x better focus",
-              img: "/images/focus-child.png"
+              img: "/images/focus-child.webp"
             },
             { 
               step: "Step 02", title: "Less Screen Time, More Thinking",
               desc: "Chess replaces mindless scrolling with active problem-solving. Instead of consuming content, your child starts creating strategies — a habit that carries into every part of life.",
               metric: "Avg. 1.5 hrs/day off screens",
-              img: "/images/screen-free.png"
+              img: "/images/screen-free.webp"
             },
             { 
               step: "Step 03", title: "Confidence That Lasts",
               desc: "Winning a game after thinking 5 moves ahead gives kids a sense of achievement no video game can match. They learn to handle losses gracefully and come back stronger.",
               metric: "Kids who stick with it love it",
-              img: "/images/confidence-win.png"
+              img: "/images/confidence-win.webp"
             }
           ].map((item, i) => (
             <div key={i} className="flex flex-col h-full">
@@ -667,7 +667,7 @@ function HowAClassWorks() {
 
         {/* Generated online class image - remove this block to revert */}
         <div className="w-full max-w-3xl mx-auto mt-10 md:mt-14 rounded-sm overflow-hidden border-4 border-[#111111] shadow-[6px_6px_0px_#FFD600] md:shadow-[8px_8px_0px_#FFD600]">
-          <img src="/images/online-class-laptop.png" alt="What an online chess class looks like on Zoom" className="w-full aspect-video object-cover" loading="lazy" width="1376" height="768" />
+          <img src="/images/online-class-laptop.webp" alt="What an online chess class looks like on Zoom" className="w-full aspect-video object-cover" loading="lazy" width="1376" height="768" />
           <div className="bg-[#111111] px-4 py-2 text-center">
             <p className="text-[9px] md:text-[10px] font-black text-gray-400 uppercase tracking-widest">A real ChessWize class in progress — live on Zoom</p>
           </div>
@@ -838,7 +838,7 @@ function ContactFormSection() {
 
           {/* Generated parent-child image - smaller, beside copy. Remove this block to revert */}
           <div className="hidden lg:block w-full max-w-xs mx-auto lg:mx-0 mb-8 rounded-sm overflow-hidden border-4 border-[#111111] shadow-[4px_4px_0px_#FFD600]">
-            <img src="/images/parent-child-chess.png" alt="Mother and child bonding over a chess game" className="w-full aspect-[4/3] object-cover" loading="lazy" width="896" height="1200" />
+            <img src="/images/parent-child-chess.webp" alt="Mother and child bonding over a chess game" className="w-full aspect-[4/3] object-cover" loading="lazy" width="896" height="1200" />
           </div>
           
           <div className="space-y-4 md:space-y-6 max-w-sm mx-auto lg:mx-0">
@@ -1071,7 +1071,7 @@ function ScreenTimeCalculator() {
 
         {/* Generated phone-vs-chess banner - remove this block to revert */}
         <div className="w-full max-w-4xl mx-auto mb-10 md:mb-14 rounded-sm overflow-hidden border-4 border-[#111111] shadow-[6px_6px_0px_#111111] md:shadow-[8px_8px_0px_#111111]">
-          <img src="/images/phone-vs-chess.png" alt="Screen time vs chess time — the contrast" className="w-full aspect-[21/9] object-cover" loading="lazy" width="1584" height="672" />
+          <img src="/images/phone-vs-chess.webp" alt="Screen time vs chess time — the contrast" className="w-full aspect-[21/9] object-cover" loading="lazy" width="1584" height="672" />
         </div>
 
         <div className="bg-gray-50 border-4 border-[#111111] shadow-[8px_8px_0px_#111111] md:shadow-[12px_12px_0px_#111111] p-5 sm:p-8 md:p-12 rounded-sm max-w-4xl mx-auto flex flex-col md:flex-row gap-8 md:gap-12">
@@ -1137,7 +1137,7 @@ function GrowthProjector() {
     <section className="py-16 md:py-24 bg-[#111111] text-white border-b-4 border-[#FFD600] relative">
       {/* Generated dark section texture - remove this div to revert */}
       <div className="absolute inset-0 opacity-[0.06] mix-blend-screen pointer-events-none">
-        <img src="/images/dark-section-texture.png" alt="" className="w-full h-full object-cover" loading="lazy" width="1376" height="768" />
+        <img src="/images/dark-section-texture.webp" alt="" className="w-full h-full object-cover" loading="lazy" width="1376" height="768" />
       </div>
       <div className="max-w-6xl mx-auto px-4 md:px-6 flex flex-col lg:flex-row gap-12 md:gap-16 items-center relative z-10">
         
@@ -1182,7 +1182,7 @@ function GrowthProjector() {
         <div className="w-full lg:w-7/12 relative mt-4 md:mt-0">
           {/* Generated growth king image - remove this div to revert */}
           <div className="hidden lg:block absolute -top-10 -right-10 w-40 h-52 opacity-25 rotate-3 pointer-events-none z-0">
-            <img src="/images/growth-king.png" alt="" className="w-full h-full object-cover rounded-sm" loading="lazy" width="896" height="1200" />
+            <img src="/images/growth-king.webp" alt="" className="w-full h-full object-cover rounded-sm" loading="lazy" width="896" height="1200" />
           </div>
           <div className="bg-white rounded-sm p-6 md:p-8 border-4 border-[#FFD600] shadow-[8px_8px_0px_#FFD600] md:shadow-[16px_16px_0px_#FFD600] text-[#111111] relative z-10">
             <div className="absolute -top-4 -left-4 md:-top-5 md:-left-5 bg-[#111111] text-white font-black px-3 md:px-4 py-1.5 md:py-2 border-2 border-[#FFD600] text-[10px] md:text-xs uppercase tracking-widest">
