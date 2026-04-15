@@ -1,0 +1,800 @@
+- generic [ref=e3]:
+  - navigation [ref=e4]:
+    - generic [ref=e5]:
+      - link "ChessWize" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - img "ChessWize" [ref=e7]
+      - generic [ref=e8]:
+        - generic [ref=e9]:
+          - link "How It Works" [ref=e10] [cursor=pointer]:
+            - /url: "#methodology"
+          - link "Programs" [ref=e11] [cursor=pointer]:
+            - /url: "#curriculum"
+          - link "Our Coaches" [ref=e12] [cursor=pointer]:
+            - /url: "#faculty"
+          - link "Pricing" [ref=e13] [cursor=pointer]:
+            - /url: "#pricing"
+        - button "Book Free Demo" [ref=e15]:
+          - generic [ref=e16]: Book Free Demo
+          - img [ref=e17]
+  - paragraph [ref=e20]: 🎉 Free Demo Class Available — Book Your Child's First Session Today!
+  - generic [ref=e26]:
+    - generic [ref=e27]:
+      - generic [ref=e28]:
+        - generic [ref=e29]: TRUSTED
+        - generic [ref=e30]: 1,500+ students trained across 15+ countries since 2017
+      - heading "Professional Online Chess Coaching for Kids." [level=1] [ref=e31]
+      - paragraph [ref=e32]: Structured, level-based online chess classes for ages 5–16. Small batches, experienced coaches, and a curriculum that builds real skills — not just moves.
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - generic [ref=e35] [cursor=pointer]:
+            - img [ref=e37]
+            - generic [ref=e45]:
+              - generic [ref=e46]: Sharper Focus
+              - generic [ref=e47]: Think 3 Moves Ahead
+          - generic: Kids learn to think before they act
+        - generic [ref=e48]:
+          - generic [ref=e49] [cursor=pointer]:
+            - img [ref=e51]
+            - generic [ref=e54]:
+              - generic [ref=e55]: 1-on-1 & Groups
+              - generic [ref=e56]: Max 4 Per Batch
+          - generic: Small batches, personal attention
+        - generic [ref=e57]:
+          - generic [ref=e58] [cursor=pointer]:
+            - img [ref=e60]
+            - generic [ref=e64]:
+              - generic [ref=e65]: All Levels
+              - generic [ref=e66]: Beginner → Advanced
+          - generic: From beginner to tournament-ready
+      - generic [ref=e67]:
+        - generic [ref=e68]:
+          - img "Parent Testimonial" [ref=e69]
+          - img "Parent Testimonial" [ref=e70]
+          - img "Parent Testimonial" [ref=e71]
+        - generic [ref=e72]:
+          - generic [ref=e73]:
+            - img [ref=e74]
+            - img [ref=e76]
+            - img [ref=e78]
+            - img [ref=e80]
+            - img [ref=e82]
+          - paragraph [ref=e84]: Our Star Parents
+    - generic [ref=e87]:
+      - generic [ref=e88]:
+        - generic [ref=e89]:
+          - heading "Book a Free Demo" [level=3] [ref=e90]
+          - paragraph [ref=e91]: See the difference in one class
+        - img [ref=e92]
+      - generic [ref=e94]:
+        - paragraph [ref=e95]: Your child gets a live 1-on-1 session with an experienced coach. We assess their level, understand their interests, and show you exactly how we teach.
+        - list [ref=e96]:
+          - listitem [ref=e97]:
+            - img [ref=e98]
+            - text: Live 1-on-1 session with a coach
+          - listitem [ref=e101]:
+            - img [ref=e102]
+            - text: Understand your child's current level
+          - listitem [ref=e105]:
+            - img [ref=e106]
+            - text: Get a personalised learning plan
+      - generic [ref=e109]:
+        - generic [ref=e110]:
+          - generic [ref=e111]: Parent's Name
+          - textbox "e.g. Rahul Sharma" [ref=e112]
+        - generic [ref=e113]:
+          - generic [ref=e114]: WhatsApp Number
+          - textbox "+91" [ref=e115]
+        - generic [ref=e116]:
+          - generic [ref=e117]: Child's Age (Must be 5+)
+          - combobox [ref=e118]:
+            - option "Select Age" [disabled] [selected]
+            - option "5 Years Old"
+            - option "6 Years Old"
+            - option "7 Years Old"
+            - option "8 Years Old"
+            - option "9 Years Old"
+            - option "10 Years Old"
+            - option "11 Years Old"
+            - option "12 Years Old"
+            - option "13 Years Old"
+            - option "14 Years Old"
+            - option "15 Years Old"
+            - option "16 Years Old"
+        - button "Book Free Demo Class" [ref=e119]:
+          - text: Book Free Demo Class
+          - img [ref=e120]
+      - paragraph [ref=e122]: 100% Free • No Payment Required • No Obligation
+  - generic [ref=e124]:
+    - generic [ref=e125]:
+      - generic [ref=e126]: 0+
+      - generic [ref=e127]: Years of Experience
+    - generic [ref=e128]:
+      - generic [ref=e129]: 0+
+      - generic [ref=e130]: Students Trained
+    - generic [ref=e131]:
+      - generic [ref=e132]: 0+
+      - generic [ref=e133]: Countries Reached
+    - generic [ref=e134]:
+      - generic [ref=e135]: 0%
+      - generic [ref=e136]: Parent Satisfaction
+  - generic [ref=e138]:
+    - generic [ref=e139]:
+      - generic [ref=e140]:
+        - img [ref=e141]
+        - text: Every Parent Should See This
+      - heading "What if that screen time became chess time?" [level=2] [ref=e144]
+      - paragraph [ref=e145]: Most kids spend 10-20 hours a week on phones. Imagine if even half of that went into learning chess. Here's what that looks like.
+    - img "Screen time vs chess time — the contrast" [ref=e147]
+    - generic [ref=e148]:
+      - generic [ref=e149]:
+        - generic [ref=e150]:
+          - text: "Weekly Screen Time:"
+          - generic [ref=e151]: 14 hrs
+        - slider [ref=e152] [cursor=pointer]: "14"
+        - generic [ref=e153]:
+          - generic [ref=e154]: 2 hrs
+          - generic [ref=e155]: 40+ hrs
+        - generic [ref=e156]:
+          - heading "Did You Know?" [level=4] [ref=e157]
+          - paragraph [ref=e158]: Studies show that children who play chess regularly score 15-20% higher in maths and reading. Chess builds the same skills your child needs for school — focus, logic, and problem-solving.
+      - generic [ref=e159]:
+        - heading "With ChessWize instead:" [level=4] [ref=e160]
+        - generic [ref=e161]:
+          - paragraph [ref=e162]: Hours of Focused Learning (Per Year)
+          - paragraph [ref=e163]: "728"
+        - generic [ref=e164]:
+          - paragraph [ref=e165]: Chess Puzzles & Patterns Learned
+          - paragraph [ref=e166]: 36+
+        - button "Book a Free Demo" [ref=e167]:
+          - text: Book a Free Demo
+          - img [ref=e168]
+  - generic [ref=e171]:
+    - generic [ref=e172]:
+      - heading "Watch your child grow month after month." [level=2] [ref=e173]
+      - paragraph [ref=e174]: Chess improvement isn't instant — but it compounds. The longer they train, the sharper they get. Here's what our students typically achieve.
+      - generic [ref=e175]:
+        - generic [ref=e176]:
+          - text: "Months of Training:"
+          - generic [ref=e177]: 6 Months
+        - slider [ref=e178] [cursor=pointer]: "6"
+        - generic [ref=e179]:
+          - generic [ref=e180]: Month 1
+          - generic [ref=e181]: Year 2
+      - list [ref=e182]:
+        - listitem [ref=e183]:
+          - img [ref=e184]
+          - generic [ref=e187]: Based on progress of 1,500+ students.
+        - listitem [ref=e188]:
+          - img [ref=e189]
+          - generic [ref=e192]: Rating = chess skill level (higher is better).
+    - generic [ref=e194]:
+      - generic [ref=e195]: Live Projection
+      - generic [ref=e196]:
+        - generic [ref=e197]:
+          - paragraph [ref=e198]: Estimated Rating
+          - generic [ref=e199]: 1364 ELO
+        - generic [ref=e200]:
+          - paragraph [ref=e201]: Skill Growth
+          - generic [ref=e202]: +241%
+      - generic [ref=e203]:
+        - generic [ref=e228]: Start
+        - generic [ref=e229]: 24 Months
+  - generic [ref=e233]:
+    - generic [ref=e234]:
+      - img [ref=e235]
+      - text: Placement Engine
+    - heading "Find the exact right program for your child." [level=2] [ref=e240]:
+      - text: Find the exact right program
+      - generic [ref=e241]: for your child.
+    - paragraph [ref=e242]: Not sure whether to choose 1-on-1, Group, Beginner, or Advanced? Take this 3-question placement quiz. We'll match them with the perfect cohort.
+    - button "Start Placement Quiz" [ref=e243]:
+      - text: Start Placement Quiz
+      - img [ref=e244]
+  - generic [ref=e247]:
+    - generic [ref=e248]:
+      - heading "Why Chess Works" [level=2] [ref=e249]
+      - heading "Chess doesn't just teach moves. It builds brains." [level=3] [ref=e250]:
+        - text: Chess doesn't just teach moves.
+        - generic [ref=e251]: It builds brains.
+    - generic [ref=e252]:
+      - generic [ref=e254]:
+        - img "Better Focus & Patience" [ref=e256]
+        - generic [ref=e257]:
+          - generic [ref=e258]: Step 01
+          - heading "Better Focus & Patience" [level=4] [ref=e259]
+          - paragraph [ref=e260]: In chess, one careless move can lose the game. Kids naturally learn to slow down, think carefully, and pay attention — skills that directly improve homework and exam performance.
+          - generic [ref=e261]:
+            - generic [ref=e262]: Measured Outcome
+            - text: Parents report 2x better focus
+      - generic [ref=e264]:
+        - img "Less Screen Time, More Thinking" [ref=e266]
+        - generic [ref=e267]:
+          - generic [ref=e268]: Step 02
+          - heading "Less Screen Time, More Thinking" [level=4] [ref=e269]
+          - paragraph [ref=e270]: Chess replaces mindless scrolling with active problem-solving. Instead of consuming content, your child starts creating strategies — a habit that carries into every part of life.
+          - generic [ref=e271]:
+            - generic [ref=e272]: Measured Outcome
+            - text: Avg. 1.5 hrs/day off screens
+      - generic [ref=e274]:
+        - img "Confidence That Lasts" [ref=e276]
+        - generic [ref=e277]:
+          - generic [ref=e278]: Step 03
+          - heading "Confidence That Lasts" [level=4] [ref=e279]
+          - paragraph [ref=e280]: Winning a game after thinking 5 moves ahead gives kids a sense of achievement no video game can match. They learn to handle losses gracefully and come back stronger.
+          - generic [ref=e281]:
+            - generic [ref=e282]: Measured Outcome
+            - text: Kids who stick with it love it
+  - generic [ref=e284]:
+    - generic [ref=e285]:
+      - generic [ref=e286]:
+        - img [ref=e287]
+        - text: Academic Structure
+      - heading "A Curriculum Built On Outcomes" [level=2] [ref=e289]:
+        - text: A Curriculum Built On
+        - generic [ref=e290]: Outcomes
+      - paragraph [ref=e291]: Age-appropriate programs that take your child from "I don't know the rules" to "I just won my first tournament" — step by step.
+    - generic [ref=e292]:
+      - generic [ref=e293] [cursor=pointer]:
+        - generic [ref=e294]:
+          - generic [ref=e295]:
+            - generic [ref=e296]: "01"
+            - generic [ref=e298]:
+              - heading "Beginners" [level=3] [ref=e299]
+              - generic [ref=e300]: Ages 5-8
+          - img [ref=e302]
+        - generic [ref=e305]:
+          - generic [ref=e306]:
+            - img [ref=e307]
+            - generic [ref=e310]: Learn how each piece moves and captures
+          - generic [ref=e311]:
+            - img [ref=e312]
+            - generic [ref=e315]: Simple checkmates your child can do in 2 moves
+          - generic [ref=e316]:
+            - img [ref=e317]
+            - generic [ref=e320]: Fun puzzles that make learning feel like a game
+      - generic [ref=e322] [cursor=pointer]:
+        - generic [ref=e323]:
+          - generic [ref=e324]: "02"
+          - generic [ref=e326]:
+            - heading "Intermediate" [level=3] [ref=e327]
+            - generic [ref=e328]: Ages 8-12
+        - img [ref=e330]
+      - generic [ref=e333] [cursor=pointer]:
+        - generic [ref=e334]:
+          - generic [ref=e335]: "03"
+          - generic [ref=e337]:
+            - heading "Advanced & Tournament" [level=3] [ref=e338]
+            - generic [ref=e339]: Ages 10-16+
+        - img [ref=e341]
+  - generic [ref=e344]:
+    - generic [ref=e345]:
+      - generic [ref=e346]:
+        - img [ref=e347]
+        - text: Our Coaches
+      - heading "Your child learns from experienced coaches." [level=3] [ref=e352]:
+        - text: Your child learns from
+        - generic [ref=e353]: experienced coaches.
+    - generic [ref=e354]:
+      - generic [ref=e355]:
+        - generic [ref=e356]:
+          - img "Coach Rahul Sharma" [ref=e357]
+          - generic [ref=e358]: FIDE Rated
+        - generic [ref=e359]:
+          - generic [ref=e360]:
+            - heading "Coach Rahul Sharma" [level=3] [ref=e361]
+            - generic [ref=e362]: 8+ Yrs
+          - paragraph [ref=e363]: Senior Chess Coach
+          - paragraph [ref=e364]: Specialises in transforming complete beginners into confident players with structured, actionable lessons.
+          - generic [ref=e365]:
+            - img [ref=e366]
+            - generic [ref=e370]: "Specialty: Beginner Training"
+      - generic [ref=e371]:
+        - generic [ref=e372]:
+          - img "Coach Arjun Mehta" [ref=e373]
+          - generic [ref=e374]: FIDE FIDE
+        - generic [ref=e375]:
+          - generic [ref=e376]:
+            - heading "Coach Arjun Mehta" [level=3] [ref=e377]
+            - generic [ref=e378]: 10+ Yrs
+          - paragraph [ref=e379]: Tournament Prep Specialist
+          - paragraph [ref=e380]: Deep expertise in advanced positional play and competitive strategy. Has groomed multiple students for state and national-level competitions.
+          - generic [ref=e381]:
+            - img [ref=e382]
+            - generic [ref=e386]: "Specialty: Tournament Prep"
+      - generic [ref=e387]:
+        - generic [ref=e388]:
+          - img "Coach Sneha Patel" [ref=e389]
+          - generic [ref=e390]: FIDE Rated
+        - generic [ref=e391]:
+          - generic [ref=e392]:
+            - heading "Coach Sneha Patel" [level=3] [ref=e393]
+            - generic [ref=e394]: 6+ Yrs
+          - paragraph [ref=e395]: Junior Cohort Lead
+          - paragraph [ref=e396]: Excels at building confidence in young learners, especially girls, making chess approachable and exciting.
+          - generic [ref=e397]:
+            - img [ref=e398]
+            - generic [ref=e402]: "Specialty: Confidence Building"
+  - generic [ref=e404]:
+    - generic [ref=e405]:
+      - generic [ref=e406]:
+        - img [ref=e407]
+        - text: Verified Reviews
+      - heading "Parents Across India ❤️ ChessWize" [level=3] [ref=e410]:
+        - text: Parents Across India
+        - text: ❤️ ChessWize
+    - heading "Hear Directly From Parents" [level=4] [ref=e412]
+    - generic [ref=e430]:
+      - generic [ref=e434]:
+        - generic [ref=e435]:
+          - img "Rupali" [ref=e436]
+          - generic [ref=e437]:
+            - paragraph [ref=e438]: Rupali
+            - paragraph [ref=e439]: Parent from Lucknow
+        - generic [ref=e440]:
+          - img [ref=e441]
+          - img [ref=e443]
+          - img [ref=e445]
+          - img [ref=e447]
+          - img [ref=e449]
+          - img [ref=e451]
+          - img [ref=e453]
+        - paragraph [ref=e455]: "\"Chesswize has been an incredible experience for my son, Aadvik! The coaches are patient and engaging, making each lesson exciting. I've noticed a big improvement in his thinking skills and concentration. He looks forward to every session, and I'm so happy with his progress. Highly recommend!\""
+      - generic [ref=e459]:
+        - generic [ref=e460]:
+          - img "Monika" [ref=e461]
+          - generic [ref=e462]:
+            - paragraph [ref=e463]: Monika
+            - paragraph [ref=e464]: Parent from Kanpur
+        - generic [ref=e465]:
+          - img [ref=e466]
+          - img [ref=e468]
+          - img [ref=e470]
+          - img [ref=e472]
+          - img [ref=e474]
+          - img [ref=e476]
+          - img [ref=e478]
+        - paragraph [ref=e480]: "\"My daughter, Anika, has shown amazing progress since joining Chesswize! The coaches make learning fun and engaging, helping her improve focus and problem-solving skills. She looks forward to every session, and I'm so happy to see her confidence grow. Highly recommend!\""
+      - generic [ref=e484]:
+        - generic [ref=e485]:
+          - img "Anjana" [ref=e486]
+          - generic [ref=e487]:
+            - paragraph [ref=e488]: Anjana
+            - paragraph [ref=e489]: Parent from Mumbai
+        - generic [ref=e490]:
+          - img [ref=e491]
+          - img [ref=e493]
+          - img [ref=e495]
+          - img [ref=e497]
+          - img [ref=e499]
+          - img [ref=e501]
+          - img [ref=e503]
+        - paragraph [ref=e505]: "\"My daughter, Ishita, has shown amazing progress since joining Chesswize! The coaches are patient and engaging, making learning fun. She has improved her focus and problem-solving skills. She looks forward to every session, and I'm so happy with her growth. Highly recommend!\""
+  - generic [ref=e507]:
+    - generic [ref=e508]:
+      - generic [ref=e509]:
+        - img [ref=e510]
+        - text: Achievements
+      - heading "Our Star Students" [level=3] [ref=e513]:
+        - text: Our Star
+        - generic [ref=e514]: Students
+    - generic [ref=e515]:
+      - generic [ref=e516]:
+        - img "Mikaeel" [ref=e518]
+        - heading "Mikaeel" [level=4] [ref=e519]
+        - paragraph [ref=e520]: "\"We are extremely grateful to ChessWize and Tarun Sir for the incredible guidance and mentorship they have provided to Mikaeel. Under Tarun Sir's expert coaching, Mikaeel's chess skills have improved significantly, and his confidence in the game has grown immensely.\""
+      - generic [ref=e521]:
+        - img "Saanvika" [ref=e523]
+        - heading "Saanvika" [level=4] [ref=e524]
+        - paragraph [ref=e525]: "\"Enrolling Saanvika in ChessWize has been one of the best decisions we made for her chess journey. Tarun Sir's patient and insightful coaching has helped her develop a deep understanding of the game. Since joining ChessWize, Saanvika has won five tournaments!\""
+      - generic [ref=e526]:
+        - img "Avyukt" [ref=e528]
+        - heading "Avyukt" [level=4] [ref=e529]
+        - paragraph [ref=e530]: "\"My son started at the basic level, and Chesswize made his learning journey incredible! His teacher quickly recognized his strengths and guided him to the next stage with patience and encouragement. Thanks to Chesswize, he advanced much faster than I expected.\""
+  - generic [ref=e532]:
+    - generic [ref=e533]:
+      - generic [ref=e534]:
+        - img [ref=e535]
+        - text: Inside a Class
+      - heading "Here's what a class looks like" [level=2] [ref=e537]:
+        - text: Here's what a
+        - generic [ref=e538]: class looks like
+    - generic [ref=e539]:
+      - generic [ref=e540]:
+        - generic [ref=e541]:
+          - img [ref=e543]
+          - generic [ref=e545]: Step 1
+          - heading "Join via Zoom" [level=3] [ref=e546]
+          - paragraph [ref=e547]: Your child logs in from home. All they need is a laptop or tablet with internet.
+        - img [ref=e549]
+      - generic [ref=e551]:
+        - generic [ref=e552]:
+          - img [ref=e554]
+          - generic [ref=e559]: Step 2
+          - heading "Meet the Coach" [level=3] [ref=e560]
+          - paragraph [ref=e561]: A friendly, experienced coach greets them and starts with a quick warm-up puzzle.
+        - img [ref=e563]
+      - generic [ref=e565]:
+        - generic [ref=e566]:
+          - img [ref=e568]
+          - generic [ref=e570]: Step 3
+          - heading "Learn & Play" [level=3] [ref=e571]
+          - paragraph [ref=e572]: 45 minutes of interactive lessons — tactics, puzzles, and live games on a shared board.
+        - img [ref=e574]
+      - generic [ref=e577]:
+        - img [ref=e579]
+        - generic [ref=e582]: Step 4
+        - heading "Homework & Progress" [level=3] [ref=e583]
+        - paragraph [ref=e584]: After class, they get fun puzzles to practice. Parents receive a progress update on WhatsApp.
+    - generic [ref=e585]:
+      - img "What an online chess class looks like on Zoom" [ref=e586]
+      - paragraph [ref=e588]: A real ChessWize class in progress — live on Zoom
+    - button "Book a Free Demo Class" [ref=e590]:
+      - text: Book a Free Demo Class
+      - img [ref=e591]
+  - generic [ref=e594]:
+    - generic [ref=e595]:
+      - generic [ref=e596]:
+        - img [ref=e597]
+        - text: Common Questions
+      - heading "Parents always ask us" [level=2] [ref=e600]
+    - generic [ref=e601]:
+      - button "Is this live or recorded?" [ref=e603]:
+        - generic [ref=e604]: Is this live or recorded?
+        - img [ref=e605]
+      - button "What if my child misses a class?" [ref=e608]:
+        - generic [ref=e609]: What if my child misses a class?
+        - img [ref=e610]
+      - button "What platform do you use?" [ref=e613]:
+        - generic [ref=e614]: What platform do you use?
+        - img [ref=e615]
+      - button "Can I sit with my child during the class?" [ref=e618]:
+        - generic [ref=e619]: Can I sit with my child during the class?
+        - img [ref=e620]
+      - button "What age is right to start chess?" [ref=e623]:
+        - generic [ref=e624]: What age is right to start chess?
+        - img [ref=e625]
+      - button "How is this different from YouTube or chess apps?" [ref=e628]:
+        - generic [ref=e629]: How is this different from YouTube or chess apps?
+        - img [ref=e630]
+      - button "Do you prepare kids for tournaments?" [ref=e633]:
+        - generic [ref=e634]: Do you prepare kids for tournaments?
+        - img [ref=e635]
+      - button "What's your refund policy?" [ref=e638]:
+        - generic [ref=e639]: What's your refund policy?
+        - img [ref=e640]
+    - generic [ref=e642]:
+      - paragraph [ref=e643]: Still have questions?
+      - link "WhatsApp Us" [ref=e644] [cursor=pointer]:
+        - /url: https://wa.me/918400979997?text=Hi%2C%20I%27d%20like%20to%20book%20a%20free%20demo%20session.
+        - img [ref=e645]
+        - text: WhatsApp Us
+  - generic [ref=e648]:
+    - generic [ref=e649]:
+      - heading "Affordable plans that fit your budget." [level=2] [ref=e650]:
+        - text: Affordable plans that
+        - generic [ref=e651]: fit your budget.
+      - paragraph [ref=e652]: Less than the cost of a math tutor. More impact on their future.
+    - generic [ref=e653]:
+      - generic [ref=e654]:
+        - heading "Group Batch" [level=3] [ref=e655]
+        - generic [ref=e656]: ₹2,999/mo
+        - generic [ref=e657]: Only ₹375 per class
+        - list [ref=e658]:
+          - listitem [ref=e659]:
+            - img [ref=e660]
+            - text: 8 live classes per month
+          - listitem [ref=e663]:
+            - img [ref=e664]
+            - text: Small batches — max 4 students
+          - listitem [ref=e667]:
+            - img [ref=e668]
+            - text: Regular progress updates for parents
+          - listitem [ref=e671]:
+            - img [ref=e672]
+            - text: Access to practice puzzles & homework
+        - button "Lock This Price" [ref=e675]
+      - generic [ref=e676]:
+        - generic [ref=e677]: Most Popular
+        - heading "1-on-1 Private" [level=3] [ref=e678]
+        - generic [ref=e679]: ₹5,999/mo
+        - generic [ref=e680]: Only ₹750 per class
+        - list [ref=e681]:
+          - listitem [ref=e682]:
+            - img [ref=e683]
+            - text: 8 private 1-on-1 classes
+          - listitem [ref=e686]:
+            - img [ref=e687]
+            - text: Personalised learning plan for your child
+          - listitem [ref=e690]:
+            - img [ref=e691]
+            - text: Weekly feedback shared with parents
+          - listitem [ref=e694]:
+            - img [ref=e695]
+            - text: Direct WhatsApp access to the coach
+        - button "Lock This Price" [ref=e698]
+    - generic [ref=e699]:
+      - img [ref=e701]
+      - generic [ref=e704]:
+        - heading "100% Money-Back Guarantee" [level=4] [ref=e705]
+        - paragraph [ref=e706]: Not happy after the first 2 classes? We'll refund every rupee. No questions asked. No forms. Just send us a WhatsApp message. That's how confident we are.
+  - generic [ref=e709]:
+    - generic [ref=e710]:
+      - generic [ref=e711]:
+        - img [ref=e712]
+        - text: Free Demo Available
+      - heading "Your child is one class away from loving chess." [level=2] [ref=e715]:
+        - text: Your child is one class away from
+        - generic [ref=e716]: loving chess.
+      - paragraph [ref=e717]: Fill in your details and we'll call you within 2 hours to schedule your child's free demo class. No payment needed.
+      - img "Mother and child bonding over a chess game" [ref=e719]
+      - generic [ref=e721]:
+        - img [ref=e722]
+        - generic [ref=e724]:
+          - paragraph [ref=e725]: Call or WhatsApp Us
+          - paragraph [ref=e726]: +91-8400979997
+    - generic [ref=e728]:
+      - generic [ref=e729]: Fast-Track
+      - generic [ref=e730]:
+        - generic [ref=e731]:
+          - generic [ref=e732]:
+            - generic [ref=e733]: Parent's Name
+            - textbox "e.g. Rahul Sharma" [ref=e734]
+          - generic [ref=e735]:
+            - generic [ref=e736]: WhatsApp Number
+            - textbox "+91" [ref=e737]
+          - generic [ref=e738]:
+            - generic [ref=e739]: Child's Age (Must be 5+)
+            - combobox [ref=e740]:
+              - option "Select Age" [disabled] [selected]
+              - option "5 Years Old"
+              - option "6 Years Old"
+              - option "7 Years Old"
+              - option "8 Years Old"
+              - option "9 Years Old"
+              - option "10 Years Old"
+              - option "11 Years Old"
+              - option "12 Years Old"
+              - option "13 Years Old"
+              - option "14 Years Old"
+              - option "15 Years Old"
+              - option "16 Years Old"
+          - button "Book Free Demo Class" [ref=e741]:
+            - text: Book Free Demo Class
+            - img [ref=e742]
+        - paragraph [ref=e744]: We'll call you within 2 hours • No spam, ever.
+  - generic [ref=e746]:
+    - generic [ref=e747]:
+      - generic [ref=e748]: 0+
+      - generic [ref=e749]: Years of Experience
+    - generic [ref=e750]:
+      - generic [ref=e751]: 0+
+      - generic [ref=e752]: Students Trained
+    - generic [ref=e753]:
+      - generic [ref=e754]: 0+
+      - generic [ref=e755]: Countries Reached
+    - generic [ref=e756]:
+      - generic [ref=e757]: 0%
+      - generic [ref=e758]: Parent Satisfaction
+  - generic [ref=e760]:
+    - generic [ref=e761]:
+      - generic [ref=e762]:
+        - img [ref=e763]
+        - text: Every Parent Should See This
+      - heading "What if that screen time became chess time?" [level=2] [ref=e766]
+      - paragraph [ref=e767]: Most kids spend 10-20 hours a week on phones. Imagine if even half of that went into learning chess. Here's what that looks like.
+    - img "Screen time vs chess time — the contrast" [ref=e769]
+    - generic [ref=e770]:
+      - generic [ref=e771]:
+        - generic [ref=e772]:
+          - text: "Weekly Screen Time:"
+          - generic [ref=e773]: 14 hrs
+        - slider [ref=e774] [cursor=pointer]: "14"
+        - generic [ref=e775]:
+          - generic [ref=e776]: 2 hrs
+          - generic [ref=e777]: 40+ hrs
+        - generic [ref=e778]:
+          - heading "Did You Know?" [level=4] [ref=e779]
+          - paragraph [ref=e780]: Studies show that children who play chess regularly score 15-20% higher in maths and reading. Chess builds the same skills your child needs for school — focus, logic, and problem-solving.
+      - generic [ref=e781]:
+        - heading "With ChessWize instead:" [level=4] [ref=e782]
+        - generic [ref=e783]:
+          - paragraph [ref=e784]: Hours of Focused Learning (Per Year)
+          - paragraph [ref=e785]: "728"
+        - generic [ref=e786]:
+          - paragraph [ref=e787]: Chess Puzzles & Patterns Learned
+          - paragraph [ref=e788]: 36+
+        - button "Book a Free Demo" [ref=e789]:
+          - text: Book a Free Demo
+          - img [ref=e790]
+  - generic [ref=e793]:
+    - generic [ref=e794]:
+      - heading "Watch your child grow month after month." [level=2] [ref=e795]
+      - paragraph [ref=e796]: Chess improvement isn't instant — but it compounds. The longer they train, the sharper they get. Here's what our students typically achieve.
+      - generic [ref=e797]:
+        - generic [ref=e798]:
+          - text: "Months of Training:"
+          - generic [ref=e799]: 6 Months
+        - slider [ref=e800] [cursor=pointer]: "6"
+        - generic [ref=e801]:
+          - generic [ref=e802]: Month 1
+          - generic [ref=e803]: Year 2
+      - list [ref=e804]:
+        - listitem [ref=e805]:
+          - img [ref=e806]
+          - generic [ref=e809]: Based on progress of 1,500+ students.
+        - listitem [ref=e810]:
+          - img [ref=e811]
+          - generic [ref=e814]: Rating = chess skill level (higher is better).
+    - generic [ref=e816]:
+      - generic [ref=e817]: Live Projection
+      - generic [ref=e818]:
+        - generic [ref=e819]:
+          - paragraph [ref=e820]: Estimated Rating
+          - generic [ref=e821]: 1364 ELO
+        - generic [ref=e822]:
+          - paragraph [ref=e823]: Skill Growth
+          - generic [ref=e824]: +241%
+      - generic [ref=e825]:
+        - generic [ref=e850]: Start
+        - generic [ref=e851]: 24 Months
+  - generic [ref=e853]:
+    - generic [ref=e854]:
+      - generic [ref=e855]:
+        - img [ref=e856]
+        - text: Verified Reviews
+      - heading "Parents Across India ❤️ ChessWize" [level=3] [ref=e859]:
+        - text: Parents Across India
+        - text: ❤️ ChessWize
+    - heading "Hear Directly From Parents" [level=4] [ref=e861]
+    - generic [ref=e879]:
+      - generic [ref=e883]:
+        - generic [ref=e884]:
+          - img "Rupali" [ref=e885]
+          - generic [ref=e886]:
+            - paragraph [ref=e887]: Rupali
+            - paragraph [ref=e888]: Parent from Lucknow
+        - generic [ref=e889]:
+          - img [ref=e890]
+          - img [ref=e892]
+          - img [ref=e894]
+          - img [ref=e896]
+          - img [ref=e898]
+          - img [ref=e900]
+          - img [ref=e902]
+        - paragraph [ref=e904]: "\"Chesswize has been an incredible experience for my son, Aadvik! The coaches are patient and engaging, making each lesson exciting. I've noticed a big improvement in his thinking skills and concentration. He looks forward to every session, and I'm so happy with his progress. Highly recommend!\""
+      - generic [ref=e908]:
+        - generic [ref=e909]:
+          - img "Monika" [ref=e910]
+          - generic [ref=e911]:
+            - paragraph [ref=e912]: Monika
+            - paragraph [ref=e913]: Parent from Kanpur
+        - generic [ref=e914]:
+          - img [ref=e915]
+          - img [ref=e917]
+          - img [ref=e919]
+          - img [ref=e921]
+          - img [ref=e923]
+          - img [ref=e925]
+          - img [ref=e927]
+        - paragraph [ref=e929]: "\"My daughter, Anika, has shown amazing progress since joining Chesswize! The coaches make learning fun and engaging, helping her improve focus and problem-solving skills. She looks forward to every session, and I'm so happy to see her confidence grow. Highly recommend!\""
+      - generic [ref=e933]:
+        - generic [ref=e934]:
+          - img "Anjana" [ref=e935]
+          - generic [ref=e936]:
+            - paragraph [ref=e937]: Anjana
+            - paragraph [ref=e938]: Parent from Mumbai
+        - generic [ref=e939]:
+          - img [ref=e940]
+          - img [ref=e942]
+          - img [ref=e944]
+          - img [ref=e946]
+          - img [ref=e948]
+          - img [ref=e950]
+          - img [ref=e952]
+        - paragraph [ref=e954]: "\"My daughter, Ishita, has shown amazing progress since joining Chesswize! The coaches are patient and engaging, making learning fun. She has improved her focus and problem-solving skills. She looks forward to every session, and I'm so happy with her growth. Highly recommend!\""
+  - generic [ref=e956]:
+    - generic [ref=e957]:
+      - generic [ref=e958]:
+        - img [ref=e959]
+        - text: Achievements
+      - heading "Our Star Students" [level=3] [ref=e962]:
+        - text: Our Star
+        - generic [ref=e963]: Students
+    - generic [ref=e964]:
+      - generic [ref=e965]:
+        - img "Mikaeel" [ref=e967]
+        - heading "Mikaeel" [level=4] [ref=e968]
+        - paragraph [ref=e969]: "\"We are extremely grateful to ChessWize and Tarun Sir for the incredible guidance and mentorship they have provided to Mikaeel. Under Tarun Sir's expert coaching, Mikaeel's chess skills have improved significantly, and his confidence in the game has grown immensely.\""
+      - generic [ref=e970]:
+        - img "Saanvika" [ref=e972]
+        - heading "Saanvika" [level=4] [ref=e973]
+        - paragraph [ref=e974]: "\"Enrolling Saanvika in ChessWize has been one of the best decisions we made for her chess journey. Tarun Sir's patient and insightful coaching has helped her develop a deep understanding of the game. Since joining ChessWize, Saanvika has won five tournaments!\""
+      - generic [ref=e975]:
+        - img "Avyukt" [ref=e977]
+        - heading "Avyukt" [level=4] [ref=e978]
+        - paragraph [ref=e979]: "\"My son started at the basic level, and Chesswize made his learning journey incredible! His teacher quickly recognized his strengths and guided him to the next stage with patience and encouragement. Thanks to Chesswize, he advanced much faster than I expected.\""
+  - generic [ref=e983]:
+    - generic [ref=e984]:
+      - img [ref=e985]
+      - text: Placement Engine
+    - heading "Find the exact right program for your child." [level=2] [ref=e990]:
+      - text: Find the exact right program
+      - generic [ref=e991]: for your child.
+    - paragraph [ref=e992]: Not sure whether to choose 1-on-1, Group, Beginner, or Advanced? Take this 3-question placement quiz. We'll match them with the perfect cohort.
+    - button "Start Placement Quiz" [ref=e993]:
+      - text: Start Placement Quiz
+      - img [ref=e994]
+  - contentinfo [ref=e996]:
+    - generic [ref=e997]:
+      - generic [ref=e998]:
+        - generic [ref=e999]:
+          - img "ChessWize" [ref=e1000]
+          - paragraph [ref=e1001]: Structured, level-based chess training designed to build strategic thinking, discipline, and competitive confidence. 7+ years of experience, 1500+ students trained across 15+ countries.
+          - generic [ref=e1002]:
+            - link [ref=e1003] [cursor=pointer]:
+              - /url: https://www.instagram.com/chess.wize/
+              - img [ref=e1004]
+            - link [ref=e1007] [cursor=pointer]:
+              - /url: https://www.facebook.com/chesswize
+              - img [ref=e1008]
+            - link [ref=e1010] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/chesswize/?viewAsMember=true
+              - img [ref=e1011]
+            - link [ref=e1015] [cursor=pointer]:
+              - /url: mailto:chesswize79@gmail.com
+              - img [ref=e1016]
+        - generic [ref=e1019]:
+          - generic [ref=e1020]:
+            - heading "Assessments" [level=4] [ref=e1021]
+            - list [ref=e1022]:
+              - listitem [ref=e1023]:
+                - link "Take the Quiz" [ref=e1024] [cursor=pointer]:
+                  - /url: /#assessments
+              - listitem [ref=e1025]:
+                - link "How It Works" [ref=e1026] [cursor=pointer]:
+                  - /url: /#methodology
+              - listitem [ref=e1027]:
+                - link "Pricing" [ref=e1028] [cursor=pointer]:
+                  - /url: /#pricing
+              - listitem [ref=e1029]:
+                - link "Our Coaches" [ref=e1030] [cursor=pointer]:
+                  - /url: /#faculty
+          - generic [ref=e1031]:
+            - heading "Programs" [level=4] [ref=e1032]
+            - list [ref=e1033]:
+              - listitem [ref=e1034]:
+                - link "Beginners (Ages 5-8)" [ref=e1035] [cursor=pointer]:
+                  - /url: /#curriculum
+              - listitem [ref=e1036]:
+                - link "Intermediate (Ages 8-12)" [ref=e1037] [cursor=pointer]:
+                  - /url: /#curriculum
+              - listitem [ref=e1038]:
+                - link "Advanced & Tournament" [ref=e1039] [cursor=pointer]:
+                  - /url: /#curriculum
+              - listitem [ref=e1040]:
+                - link "Meet Our Coaches" [ref=e1041] [cursor=pointer]:
+                  - /url: /#faculty
+          - generic [ref=e1042]:
+            - heading "Support" [level=4] [ref=e1043]
+            - list [ref=e1044]:
+              - listitem [ref=e1045]:
+                - link "chesswize79@gmail.com" [ref=e1046] [cursor=pointer]:
+                  - /url: mailto:chesswize79@gmail.com
+              - listitem [ref=e1047]:
+                - link "+91-8400979997" [ref=e1048] [cursor=pointer]:
+                  - /url: tel:+918400979997
+              - listitem [ref=e1049]:
+                - link "WhatsApp Us" [ref=e1050] [cursor=pointer]:
+                  - /url: https://wa.me/918400979997?text=Hi%2C%20I%27d%20like%20to%20book%20a%20free%20demo%20session.
+                  - img [ref=e1051]
+                  - text: WhatsApp Us
+      - generic [ref=e1053]:
+        - paragraph [ref=e1054]: © 2026 ChessWize. All Rights Reserved.
+        - generic [ref=e1055]:
+          - link "Privacy" [ref=e1056] [cursor=pointer]:
+            - /url: /privacy
+          - link "Terms" [ref=e1057] [cursor=pointer]:
+            - /url: /terms
+          - link "Refunds" [ref=e1058] [cursor=pointer]:
+            - /url: /refunds
