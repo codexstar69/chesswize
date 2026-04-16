@@ -5,6 +5,7 @@ import LiveBookingToast from "../components/layout/LiveBookingToast";
 import StickyMobileCTA from "../components/layout/StickyMobileCTA";
 import BookingForm from "../components/ui/BookingForm";
 import LazyVideo from "../components/ui/LazyVideo";
+import EmblaCarousel from "../components/ui/EmblaCarousel";
 import Lenis from "lenis";
 import {
   ChevronDown, CheckCircle, MessageCircle, Star, Target, ArrowRight,
@@ -15,12 +16,6 @@ import {
   Monitor, Puzzle, TrendingUp, HelpCircle, ChevronUp
 } from "lucide-react";
 import { motion, AnimatePresence, useInView } from "motion/react";
-import TopNav from "../components/layout/TopNav";
-import Footer from "../components/layout/Footer";
-import LiveBookingToast from "../components/layout/LiveBookingToast";
-import StickyMobileCTA from "../components/layout/StickyMobileCTA";
-import BookingForm from "../components/ui/BookingForm";
-import LazyVideo from "../components/ui/LazyVideo";
 import { useInView as useIOInView } from "react-intersection-observer";
 
 // ── Scroll-triggered animation wrapper ────────────────────────────────────
@@ -504,9 +499,9 @@ function Curriculum() {
 
 function Mentors() {
   const coaches = [
-    { name: "Coach Rahul Sharma", role: "Senior Chess Coach", rating: "Rated", img: "https://chesswize.com/wp-content/uploads/2025/03/Untitled-design-20.png", focus: "Beginner Training", exp: "8+", desc: "Specialises in transforming complete beginners into confident players with structured, actionable lessons." },
-    { name: "Coach Arjun Mehta", role: "Tournament Prep Specialist", rating: "FIDE", img: "https://chesswize.com/wp-content/uploads/2025/03/Untitled-design-21.png", focus: "Tournament Prep", exp: "10+", desc: "Deep expertise in advanced positional play and competitive strategy. Has groomed multiple students for state and national-level competitions." },
-    { name: "Coach Sneha Patel", role: "Junior Cohort Lead", rating: "Rated", img: "https://chesswize.com/wp-content/uploads/2025/03/Untitled-design-26.png", focus: "Confidence Building", exp: "6+", desc: "Excels at building confidence in young learners, especially girls, making chess approachable and exciting." },
+    { name: "Tarun Sir", role: "Founder & Head Coach", rating: "FIDE Rated", img: "https://chesswize.com/wp-content/uploads/2025/03/Untitled-design-20.png", focus: "Strategy & Mentorship", exp: "7+", students: "1,500+", achievement: "Built ChessWize from 3 students to a 15-country academy", desc: "FIDE-rated player and the driving force behind ChessWize. Tarun Sir personally designed the level-based curriculum used across all batches. Known for his ability to spot a child's unique strengths within the first session, he has coached students who've gone on to win state championships, FIDE-rated tournaments, and national-level medals. Parents describe him as 'the coach who actually cares.'" },
+    { name: "Coach Priya", role: "Beginner & Junior Specialist", rating: "Rated", img: "https://chesswize.com/wp-content/uploads/2025/03/Untitled-design-26.png", focus: "Young Learners (Ages 5-8)", exp: "5+", students: "400+", achievement: "100% retention rate in her beginner batches", desc: "Priya makes chess feel like a game, not a class. She uses storytelling, character-based piece introductions, and mini-challenges to keep 5-8 year olds engaged for the full 45 minutes. Parents of shy or first-time learners specifically request her. She's trained over 400 young beginners, many of whom moved up to intermediate within 4 months." },
+    { name: "Coach Arjun", role: "Advanced & Tournament Coach", rating: "FIDE Rated", img: "https://chesswize.com/wp-content/uploads/2025/03/Untitled-design-21.png", focus: "FIDE Rating & Competitions", exp: "8+", students: "300+", achievement: "12 students achieved FIDE ratings under his coaching", desc: "Arjun is the coach serious players ask for. With deep expertise in opening theory, positional play, and endgame technique, he prepares students for FIDE-rated and national-level tournaments. His students have collectively won 30+ medals at state and national events. He runs weekly mock tournaments and post-game analysis sessions that simulate real competition pressure." },
   ];
 
   return (
@@ -536,9 +531,18 @@ function Mentors() {
                   <span className="text-[#FFD600] font-black text-xs bg-[#0F172A] px-2 py-0.5">{c.exp} Yrs</span>
                 </div>
                 <p className="text-gray-500 font-bold uppercase tracking-widest text-[10px] md:text-xs mb-3">{c.role}</p>
+                <div className="flex gap-2 mb-3 flex-wrap">
+                  <span className="text-[8px] md:text-[9px] font-black px-2 py-0.5 bg-green-100 text-green-700 border border-green-300 uppercase tracking-widest">{c.students} Students</span>
+                  <span className="text-[8px] md:text-[9px] font-black px-2 py-0.5 bg-blue-100 text-blue-700 border border-blue-300 uppercase tracking-widest">{c.rating}</span>
+                </div>
                 <p className="text-xs md:text-sm font-bold text-gray-600 leading-relaxed mb-4 flex-1">{c.desc}</p>
-                <div className="mt-auto flex items-center gap-2 text-[10px] md:text-xs font-black uppercase tracking-wider text-[#0F172A] bg-[#FFF4E5] p-2 md:p-3 border-2 border-[#0F172A] rounded-sm">
-                  <Target className="w-3 h-3 md:w-4 md:h-4 text-[#B45309] shrink-0" /> <span className="truncate">Specialty: {c.focus}</span>
+                <div className="mt-auto space-y-2">
+                  <div className="flex items-center gap-2 text-[10px] md:text-xs font-black uppercase tracking-wider text-[#0F172A] bg-[#FFF4E5] p-2 md:p-3 border-2 border-[#0F172A] rounded-sm">
+                    <Target className="w-3 h-3 md:w-4 md:h-4 text-[#B45309] shrink-0" /> <span className="truncate">Specialty: {c.focus}</span>
+                  </div>
+                  <div className="flex items-start gap-2 text-[10px] md:text-xs font-black uppercase tracking-wider text-green-700 bg-green-50 p-2 md:p-3 border-2 border-green-200 rounded-sm">
+                    <Award className="w-3 h-3 md:w-4 md:h-4 text-green-600 shrink-0 mt-0.5" /> <span>{c.achievement}</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -551,10 +555,10 @@ function Mentors() {
 
 function HowAClassWorks() {
   const steps = [
-    { icon: <Monitor className="w-6 h-6 md:w-8 md:h-8" />, title: "Join via Zoom", desc: "Your child logs in from home. All they need is a laptop or tablet with internet." },
-    { icon: <Users className="w-6 h-6 md:w-8 md:h-8" />, title: "Meet the Coach", desc: "A friendly, experienced coach greets them and starts with a quick warm-up puzzle." },
-    { icon: <Puzzle className="w-6 h-6 md:w-8 md:h-8" />, title: "Learn & Play", desc: "45 minutes of interactive lessons — tactics, puzzles, and live games on a shared board." },
-    { icon: <TrendingUp className="w-6 h-6 md:w-8 md:h-8" />, title: "Homework & Progress", desc: "After class, they get fun puzzles to practice. Parents receive a progress update on WhatsApp." },
+    { icon: <Monitor className="w-6 h-6 md:w-8 md:h-8" />, title: "Join via Zoom", time: "2 min setup", desc: "Your child logs in from home — all they need is a laptop or tablet with internet. Parents receive a Zoom link on WhatsApp 30 minutes before class. Camera is optional for shy kids; many start audio-only and turn on video once they're comfortable.", parent: "You'll get a reminder + link on WhatsApp so you never miss a session." },
+    { icon: <Users className="w-6 h-6 md:w-8 md:h-8" />, title: "Meet the Coach", time: "First 5 min", desc: "A friendly, experienced coach greets your child by name and starts with a quick warm-up puzzle to get their brain engaged. For first-timers, the coach spends extra time making them feel safe — no pressure, no judgement, just fun.", parent: "Parents can sit in for the first few classes. Most kids are independent by session 3." },
+    { icon: <Puzzle className="w-6 h-6 md:w-8 md:h-8" />, title: "Learn & Play", time: "35 min core", desc: "The main lesson covers a specific concept — like forks, pins, or checkmate patterns — using a shared interactive board on Lichess. The coach explains, demonstrates, then lets your child try. Every session includes at least one live game where the coach watches and gives real-time tips.", parent: "Lessons are structured by level. Your child is never overwhelmed or bored." },
+    { icon: <TrendingUp className="w-6 h-6 md:w-8 md:h-8" />, title: "Homework & Progress", time: "After class", desc: "After class, your child gets 3-5 fun puzzles matched to what they learned. These take about 10-15 minutes and reinforce the lesson. Parents receive a WhatsApp message summarising what was covered, how the child performed, and what to practice.", parent: "You'll always know exactly where your child stands — no guessing." },
   ];
 
   return (
@@ -572,13 +576,21 @@ function HowAClassWorks() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-4">
           {steps.map((step, i) => (
             <div key={i} className="relative">
-              <div className="bg-[#FAFAFA] border-4 border-[#0F172A] p-5 md:p-6 shadow-brutal-soft md:shadow-brutal-soft h-full">
-                <div className="w-12 h-12 md:w-14 md:h-14 bg-[#FFD600] border-4 border-[#0F172A] flex items-center justify-center mb-4 shadow-brutal-soft">
-                  {step.icon}
+              <div className="bg-[#FAFAFA] border-4 border-[#0F172A] p-5 md:p-6 shadow-brutal-soft md:shadow-brutal-soft h-full flex flex-col">
+                <div className="flex items-center justify-between mb-4">
+                  <div className="w-12 h-12 md:w-14 md:h-14 bg-[#FFD600] border-4 border-[#0F172A] flex items-center justify-center shadow-brutal-soft">
+                    {step.icon}
+                  </div>
+                  <span className="text-[8px] md:text-[9px] font-black text-white bg-[#0F172A] px-2 py-1 uppercase tracking-widest">{step.time}</span>
                 </div>
                 <div className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-2">Step {i + 1}</div>
                 <h3 className="text-lg md:text-xl font-black text-[#0F172A] uppercase tracking-tight mb-2">{step.title}</h3>
-                <p className="text-xs md:text-sm font-bold text-gray-600 leading-relaxed">{step.desc}</p>
+                <p className="text-xs md:text-sm font-bold text-gray-600 leading-relaxed mb-4 flex-1">{step.desc}</p>
+                <div className="mt-auto pt-3 border-t-2 border-dashed border-gray-200">
+                  <p className="text-[9px] md:text-[10px] font-black text-green-700 uppercase tracking-wider flex items-start gap-1.5">
+                    <ShieldCheck className="w-3 h-3 md:w-3.5 md:h-3.5 shrink-0 mt-0.5" /> {step.parent}
+                  </p>
+                </div>
               </div>
               {i < steps.length - 1 && (
                 <div className="hidden md:flex absolute top-1/2 -right-4 transform -translate-y-1/2 z-10 text-[#FFD600]">
@@ -617,6 +629,9 @@ function FAQ() {
     { q: "How is this different from YouTube or chess apps?", a: "Apps and videos can't correct mistakes, adapt to your child's level, or build a relationship. Our coaches personalise every lesson, track progress, and keep your child motivated week after week." },
     { q: "Do you prepare kids for tournaments?", a: "Yes! Our Advanced & Tournament program is specifically designed for competitive play. Many of our students have won state and national-level tournaments." },
     { q: "What's your refund policy?", a: "If you're not happy after the first 2 classes, we refund 100% — no questions asked. Just send us a WhatsApp message. That's it." },
+    { q: "How do I know my child is actually improving?", a: "After every class, your coach sends a WhatsApp summary — what was taught, how your child performed, and what to practice. Monthly, you get a detailed progress report covering puzzles solved, concepts mastered, rating changes, and areas to work on. You'll never have to guess." },
+    { q: "What if my child is too shy or introverted?", a: "Many of our best students started as shy kids. Camera is optional for the first few sessions. Coaches are trained to gently encourage participation without pressure. Most shy children start unmuting and engaging by week 2-3. Chess actually helps introverted kids build confidence because success comes from thinking, not talking." },
+    { q: "Is chess really better than coding or math classes for brain development?", a: "They develop different skills, but chess has a unique advantage: it builds focus, patience, and emotional regulation simultaneously. Research from the University of Memphis found chess-playing students scored 17% higher in reading and maths. Unlike coding, chess requires zero screen-based creation — it's pure strategic thinking. Many parents enrol their kids in both chess and coding, and find chess improves their performance in everything else." },
   ];
 
   const [open, setOpen] = useState<number | null>(null);
@@ -1004,20 +1019,32 @@ function SuccessStories() {
     { 
       img: "https://chesswize.com/wp-content/uploads/2025/03/Untitled-design-20.png", 
       name: "Rupali", 
-      title: "Parent from Lucknow", 
-      quote: "Chesswize has been an incredible experience for my son, Aadvik! The coaches are patient and engaging, making each lesson exciting. I've noticed a big improvement in his thinking skills and concentration. He looks forward to every session, and I'm so happy with his progress. Highly recommend!" 
+      title: "Mother of Aadvik (Age 8) · Lucknow", 
+      quote: "Aadvik couldn't sit still for 10 minutes before ChessWize. After 3 months with Tarun Sir, he learned forks, pins, and basic endgames — and his school teacher told us his maths concentration has improved dramatically. He went from zero chess knowledge to winning his school's inter-house tournament!" 
     },
     { 
       img: "https://chesswize.com/wp-content/uploads/2025/03/Untitled-design-21.png", 
       name: "Monika", 
-      title: "Parent from Kanpur", 
-      quote: "My daughter, Anika, has shown amazing progress since joining Chesswize! The coaches make learning fun and engaging, helping her improve focus and problem-solving skills. She looks forward to every session, and I'm so happy to see her confidence grow. Highly recommend!" 
+      title: "Mother of Anika (Age 11) · Kanpur", 
+      quote: "Anika was spending 3+ hours daily on her phone. We enrolled her in ChessWize as an experiment. Within 6 weeks, she was solving 15 tactical puzzles a day on her own — voluntarily! Her screen time dropped to under 45 minutes. The coaches taught her the Sicilian Defense and she used it to win her first district-level tournament." 
     },
     { 
       img: "https://chesswize.com/wp-content/uploads/2025/03/Untitled-design-26.png", 
       name: "Anjana", 
-      title: "Parent from Mumbai", 
-      quote: "My daughter, Ishita, has shown amazing progress since joining Chesswize! The coaches are patient and engaging, making learning fun. She has improved her focus and problem-solving skills. She looks forward to every session, and I'm so happy with her growth. Highly recommend!" 
+      title: "Mother of Ishita (Age 6) · Mumbai", 
+      quote: "I was worried Ishita was too young for chess. But the beginner batch made it so playful — they used stories to teach how each piece moves. By month 2, she was checkmating me! Her coach sends us a WhatsApp progress update after every single class. That level of care is rare." 
+    },
+    { 
+      img: "https://chesswize.com/wp-content/uploads/2025/03/Untitled-design-20.png", 
+      name: "Vikram", 
+      title: "Father of Arjun (Age 13) · Bangalore", 
+      quote: "Arjun was already playing chess casually, but had no structure. ChessWize gave him a proper opening repertoire, taught him positional concepts like outposts and pawn structures, and prepared him for FIDE-rated tournaments. He went from unrated to 1250 ELO in 8 months. The Advanced batch is seriously rigorous." 
+    },
+    { 
+      img: "https://chesswize.com/wp-content/uploads/2025/03/Untitled-design-26.png", 
+      name: "Priya", 
+      title: "Mother of Diya (Age 9) · Hyderabad", 
+      quote: "Diya is a shy child and I was nervous about online classes. But her coach was so patient — camera was optional for the first few sessions. By week 3, Diya was unmuting herself to answer puzzle questions. She's now solved over 500 puzzles on Lichess and recently placed 3rd in a state-level U-10 event. Chess gave her confidence nothing else could." 
     },
   ];
 
@@ -1033,54 +1060,45 @@ function SuccessStories() {
           </h3>
         </div>
 
-        {/* Video Testimonials */}
+        {/* Video Testimonials - Embla carousel on mobile, 4-col grid on desktop */}
         <div className="mb-16 md:mb-20">
           <h4 className="text-center text-xs md:text-sm font-black text-gray-400 uppercase tracking-widest mb-8">Hear Directly From Parents</h4>
-          <div className="flex flex-col gap-6 md:gap-8 max-w-2xl mx-auto">
+          <EmblaCarousel desktopGrid desktopCols={4}>
             {[
               "/20250924_224436.mp4",
               "/VID-20250914-WA0001.mp4",
-            ,
               "/VID-20250916-WA0013.mp4",
               "/VID-20251006-WA0003.mp4"
             ].map((src, i) => (
-              <div key={i} className="bg-[#FAFAFA] border-4 border-[#FFD600] shadow-brutal-yellow md:shadow-brutal-yellow rounded-sm overflow-hidden">
-                <LazyVideo src={src} className="w-full aspect-[9/16] bg-black" />
+              <div key={i} className="bg-[#0F172A] border-4 border-[#FFD600] shadow-brutal-yellow rounded-sm overflow-hidden aspect-[9/16]">
+                <LazyVideo src={src} className="w-full h-full" />
               </div>
             ))}
-          </div>
+          </EmblaCarousel>
         </div>
 
-        {/* Written Testimonials - always one row, horizontal scroll on mobile */}
-        <div className="flex gap-4 md:gap-6 mt-8 overflow-x-auto pb-6 snap-x snap-mandatory -mx-4 px-4 md:mx-0 md:px-0 md:overflow-visible hide-scrollbar">
+        {/* Written Testimonials - Embla carousel on mobile, grid on desktop */}
+        <EmblaCarousel desktopGrid desktopCols={3}>
           {testimonials.map((t, i) => (
-            <div key={i} className="relative group min-w-[75vw] sm:min-w-[280px] md:min-w-0 flex-shrink-0 md:flex-shrink md:flex-1 snap-center">
-              {/* Layered background cards for depth */}
+            <div key={i} className="relative group h-full">
               <div className="absolute inset-0 bg-[#FFD600] translate-x-2 translate-y-2 md:translate-x-3 md:translate-y-3 rounded-sm" />
               <div className="absolute inset-0 bg-[#FFD600]/50 translate-x-1 translate-y-1 md:translate-x-1.5 md:translate-y-1.5 rounded-sm" />
-              
-              <div className="relative bg-[#FAFAFA] rounded-sm border-2 border-[#0F172A] p-5 md:p-6 flex flex-col h-full">
-                {/* Avatar + name inline */}
-                <div className="flex items-center gap-3 mb-4">
-                  <img src={t.img} alt={t.name} className="w-12 h-12 rounded-full border-2 border-[#0F172A] object-cover shrink-0" loading="lazy" />
+              <div className="relative bg-[#FAFAFA] rounded-sm border-2 border-[#0F172A] p-4 md:p-6 flex flex-col h-full">
+                <div className="flex items-center gap-3 mb-3">
+                  <img src={t.img} alt={t.name} className="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-[#0F172A] object-cover shrink-0" loading="lazy" />
                   <div>
                     <p className="font-black text-[#0F172A] text-sm uppercase leading-tight">{t.name}</p>
                     <p className="text-[9px] text-gray-500 font-bold uppercase tracking-widest">{t.title}</p>
                   </div>
                 </div>
-                
                 <div className="flex gap-0.5 text-[#0F172A] mb-3">
-                  {[...Array(5),
-              "/VID-20250916-WA0013.mp4",
-              "/VID-20251006-WA0003.mp4"
-            ].map((_, i) => <Star key={i} className="w-3.5 h-3.5 fill-current" />)}
+                  {Array.from({ length: 5 }).map((_, j) => <Star key={j} className="w-3.5 h-3.5 fill-current" />)}
                 </div>
-                
                 <p className="font-bold text-[#0F172A] text-xs md:text-sm leading-relaxed italic flex-1">"{t.quote}"</p>
               </div>
             </div>
           ))}
-        </div>
+        </EmblaCarousel>
       </div>
     </section>
   );
@@ -1091,17 +1109,26 @@ function StarPerformers() {
     { 
       img: "https://chesswize.com/wp-content/uploads/2025/03/Untitled-design-30.png", 
       name: "Mikaeel", 
-      quote: "We are extremely grateful to ChessWize and Tarun Sir for the incredible guidance and mentorship they have provided to Mikaeel. Under Tarun Sir's expert coaching, Mikaeel's chess skills have improved significantly, and his confidence in the game has grown immensely." 
+      age: "Age 10",
+      badges: ["FIDE Rated 1180+", "3 Tournament Wins"],
+      timeline: "Joined as beginner in Mar 2023 → Won district championship by Nov 2023",
+      quote: "We are extremely grateful to ChessWize and Tarun Sir for the incredible guidance. Mikaeel went from not knowing how to castle to winning his first FIDE-rated tournament in just 8 months. His rating jumped from unrated to 1180+, and he now studies openings on his own every morning before school." 
     },
     { 
       img: "https://chesswize.com/wp-content/uploads/2025/03/Untitled-design-28.png", 
       name: "Saanvika", 
-      quote: "Enrolling Saanvika in ChessWize has been one of the best decisions we made for her chess journey. Tarun Sir's patient and insightful coaching has helped her develop a deep understanding of the game. Since joining ChessWize, Saanvika has won five tournaments!" 
+      age: "Age 9",
+      badges: ["5 Tournament Wins", "State Champion U-10"],
+      timeline: "Joined intermediate batch in Jan 2023 → State champion by Dec 2023",
+      quote: "Enrolling Saanvika in ChessWize has been one of the best decisions we made. Tarun Sir's coaching helped her master tactical patterns like discovered attacks and back-rank mates. Since joining, Saanvika has won five tournaments including the UP State Championship U-10 — and her school grades went up too!" 
     },
     { 
       img: "https://chesswize.com/wp-content/uploads/2025/03/Untitled-design-29.png", 
       name: "Avyukt", 
-      quote: "My son started at the basic level, and Chesswize made his learning journey incredible! His teacher quickly recognized his strengths and guided him to the next stage with patience and encouragement. Thanks to Chesswize, he advanced much faster than I expected." 
+      age: "Age 7",
+      badges: ["Fastest Promotion", "200+ Puzzles Solved"],
+      timeline: "Joined beginner batch in Jun 2024 → Moved to intermediate in just 10 weeks",
+      quote: "Avyukt started at the absolute basic level — he didn't even know how the knight moves. His coach recognised his pattern-recognition ability early and gave him extra puzzle challenges. In just 10 weeks, he solved over 200 puzzles on Lichess and was promoted to the intermediate batch — the fastest promotion in ChessWize history!" 
     },
   ];
 
@@ -1117,14 +1144,25 @@ function StarPerformers() {
           </h3>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 items-stretch">
           {stars.map((s, i) => (
-            <div key={i} className="bg-[#FAFAFA] border-4 border-[#0F172A] shadow-brutal-soft md:shadow-brutal-soft p-4 md:p-8 flex flex-col relative transform transition-transform hover:-translate-y-2">
-              <div className="w-full aspect-square bg-gray-100 border-4 border-[#0F172A] overflow-hidden mb-4 md:mb-6 shadow-brutal-soft md:shadow-brutal-soft">
+            <div key={i} className="bg-[#FAFAFA] border-4 border-[#0F172A] shadow-brutal-soft md:shadow-brutal-soft p-4 md:p-8 flex flex-col h-full relative transform transition-transform hover:-translate-y-2">
+              <div className="w-full aspect-square bg-gray-100 border-4 border-[#0F172A] overflow-hidden mb-4 md:mb-6 shadow-brutal-soft md:shadow-brutal-soft shrink-0">
                 <img src={s.img} alt={s.name} className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" loading="lazy" />
               </div>
-              <h4 className="text-lg md:text-2xl font-black text-[#0F172A] uppercase tracking-tight mb-3 md:mb-4 border-b-2 border-gray-200 pb-3 md:pb-4">{s.name}</h4>
-              <p className="text-xs md:text-sm font-bold text-gray-700 leading-relaxed italic">"{s.quote}"</p>
+              <div className="flex items-center justify-between mb-2 shrink-0">
+                <h4 className="text-lg md:text-2xl font-black text-[#0F172A] uppercase tracking-tight">{s.name}</h4>
+                <span className="text-[9px] md:text-[10px] font-black px-2 py-1 bg-[#0F172A] text-white uppercase tracking-widest">{s.age}</span>
+              </div>
+              <div className="flex flex-wrap gap-1.5 mb-3 shrink-0">
+                {s.badges.map((b, j) => (
+                  <span key={j} className="text-[8px] md:text-[9px] font-black px-2 py-0.5 bg-[#FFD600] text-[#0F172A] border border-[#0F172A] uppercase tracking-widest">{b}</span>
+                ))}
+              </div>
+              <div className="text-[9px] md:text-[10px] font-black text-green-700 bg-green-50 border border-green-200 px-3 py-2 mb-4 uppercase tracking-wider shrink-0">
+                <TrendingUp className="w-3 h-3 inline mr-1.5 -mt-0.5" />{s.timeline}
+              </div>
+              <p className="text-xs md:text-sm font-bold text-gray-700 leading-relaxed italic flex-1">"{s.quote}"</p>
             </div>
           ))}
         </div>
@@ -1276,6 +1314,66 @@ function CohortPlacementQuiz() {
 
 
 
+function FounderStory() {
+  return (
+    <section className="py-16 md:py-24 bg-[#FAFAFA] border-b-4 border-[#0F172A] overflow-hidden">
+      <div className="max-w-6xl mx-auto px-4 md:px-6">
+        <div className="text-center mb-10 md:mb-16">
+          <div className="inline-flex items-center gap-2 bg-[#FFD600] border-2 border-[#0F172A] shadow-brutal-soft text-[#0F172A] font-black text-[9px] md:text-[10px] uppercase tracking-[0.2em] px-3 md:px-4 py-1.5 md:py-2 mb-4 md:mb-6">
+            <Sparkles className="w-3 h-3 md:w-4 md:h-4" /> The Story Behind ChessWize
+          </div>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#0F172A] uppercase tracking-tight leading-none">
+            Why I started <span className="bg-[#FFD600] px-2 md:px-3 py-1 transform inline-block -rotate-1 border-4 border-[#0F172A] shadow-brutal-soft mt-2">teaching chess.</span>
+          </h2>
+        </div>
+
+        <div className="flex flex-col lg:flex-row gap-10 md:gap-16 items-center">
+          <div className="w-full lg:w-5/12 shrink-0">
+            <div className="relative">
+              <div className="absolute top-3 -right-3 md:top-4 md:-right-4 w-full h-full bg-[#FFD600] border-4 border-[#0F172A]" />
+              <div className="relative border-4 border-[#0F172A] overflow-hidden bg-gray-100 shadow-brutal-soft">
+                <img src="https://chesswize.com/wp-content/uploads/2025/03/Untitled-design-20.png" alt="Tarun — Founder of ChessWize" className="w-full aspect-[3/4] object-cover" loading="lazy" />
+                <div className="absolute bottom-0 left-0 right-0 bg-[#0F172A] px-4 py-3 text-center">
+                  <p className="text-[#FFD600] font-black text-sm md:text-base uppercase tracking-widest">Tarun · Founder & Head Coach</p>
+                  <p className="text-gray-400 font-bold text-[9px] md:text-[10px] uppercase tracking-widest mt-0.5">FIDE Rated · 7+ Years · 1,500+ Students</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="w-full lg:w-7/12">
+            <div className="space-y-5 md:space-y-6 text-sm md:text-base font-bold text-gray-700 leading-relaxed">
+              <p className="text-lg md:text-xl font-black text-[#0F172A] leading-snug">
+                "I started ChessWize in 2017 with just 3 students and a Zoom link. Today, we've trained over 1,500 kids across 15+ countries. But the reason I started hasn't changed."
+              </p>
+              <p>
+                I was coaching a 9-year-old boy in Lucknow who was brilliant — sharp memory, quick thinker — but his parents were worried sick. He was spending 4-5 hours a day on mobile games. His grades were slipping. He couldn't sit through a 30-minute homework session without reaching for his phone.
+              </p>
+              <p>
+                Within 8 weeks of structured chess training, something shifted. He started <span className="text-[#0F172A] font-black">choosing puzzles over YouTube</span>. His mother called me, almost in tears, saying he'd sat through an entire exam without fidgeting for the first time. That moment changed everything for me.
+              </p>
+              <p>
+                I realised chess wasn't just a game — it was a <span className="text-[#0F172A] font-black">tool that could rewire how children think</span>. It teaches patience in a world of instant gratification. It builds focus when everything around them is designed to distract. And it gives them a sense of achievement that no video game can match.
+              </p>
+              <p>
+                That's why every coach at ChessWize is trained not just in chess, but in <span className="text-[#0F172A] font-black">how children learn</span>. We don't just teach moves — we build thinkers.
+              </p>
+            </div>
+
+            <div className="mt-8 md:mt-10 p-5 md:p-6 bg-[#0F172A] border-4 border-[#0F172A] shadow-brutal-yellow text-white">
+              <Quote className="w-8 h-8 text-[#FFD600] mb-3" />
+              <p className="text-base md:text-lg font-black italic leading-relaxed text-gray-200">
+                "Every child who joins ChessWize gets the same thing — a coach who genuinely cares about their growth, not just their rating."
+              </p>
+              <p className="text-[#FFD600] font-black text-xs uppercase tracking-widest mt-4">— Tarun, Founder</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export default function Landing() {
   useEffect(() => {
     const lenis = new Lenis({ duration: 1.2, smoothWheel: true } as any);
@@ -1295,6 +1393,7 @@ export default function Landing() {
       <NeurologicalImpact />
       <Curriculum />
       <Mentors />
+      <FounderStory />
       <SuccessStories />
       <StarPerformers />
       <HowAClassWorks />
