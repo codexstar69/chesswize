@@ -122,7 +122,7 @@ function Hero() {
         <img src="/images/hero-bg-pattern.webp" alt="" className="w-full h-full object-cover" loading="eager" width="1376" height="768" />
       </div>
       
-      <div className="max-w-7xl mx-auto px-4 md:px-6 flex flex-col lg:flex-row items-center gap-12 lg:gap-12 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center gap-12 lg:gap-12 relative z-10">
         
         {/* Left: Hero Image + Copy */}
         <div className="w-full lg:w-7/12 flex flex-col items-start text-left">
@@ -287,7 +287,7 @@ function DeepCognitiveQuiz() {
   return (
     <section id="assessments" className="py-16 md:py-24 bg-[#0F172A] text-white border-b-4 border-[#FFD600] relative overflow-hidden">
       <div className="absolute inset-0 bg-subtle-grid opacity-10" />
-      <div className="max-w-4xl mx-auto px-4 md:px-6 relative z-10">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {step === 0 && (
           <div className="text-center">
@@ -379,8 +379,8 @@ function DeepCognitiveQuiz() {
 
 function NeurologicalImpact() {
   return (
-    <section id="methodology" className="py-16 md:py-24 bg-[#FAFAFA] border-b-4 border-[#0F172A] overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 md:px-6">
+    <section id="methodology" className="py-16 md:py-24 bg-[#F8FAFC] border-b-4 border-[#0F172A] overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-4xl mx-auto mb-10 md:mb-16">
             <h2 className="text-xs md:text-sm font-black text-gray-400 uppercase tracking-widest mb-3 md:mb-4">Why Chess Works</h2>
             <h3 className="text-3xl sm:text-4xl md:text-5xl font-black uppercase tracking-tight leading-[1.1]">
@@ -444,7 +444,7 @@ function Curriculum() {
 
   return (
     <section id="curriculum" className="py-16 md:py-24 bg-[#F8FAFC] border-b-4 border-[#0F172A] overflow-hidden">
-      <div className="max-w-4xl mx-auto px-4 md:px-6">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10 md:mb-16">
           <div className="inline-flex items-center gap-2 bg-[#0F172A] border-2 border-gray-800 text-gray-400 font-black text-[9px] md:text-[10px] uppercase tracking-[0.2em] px-3 md:px-4 py-1.5 md:py-2 mb-4 md:mb-6">
             <BookOpen className="w-3 h-3 md:w-4 md:h-4" /> Academic Structure
@@ -506,7 +506,7 @@ function Mentors() {
 
   return (
     <section id="faculty" className="py-16 md:py-24 bg-[#F8FAFC] border-b-4 border-[#0F172A]">
-      <div className="max-w-6xl mx-auto px-4 md:px-6">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10 md:mb-16">
           <div className="inline-flex items-center gap-2 bg-[#0F172A] border-2 border-gray-800 text-gray-400 font-black text-[9px] md:text-[10px] uppercase tracking-[0.2em] px-3 md:px-4 py-1.5 md:py-2 mb-4 md:mb-6">
             <Users className="w-3 h-3 md:w-4 md:h-4" /> Our Coaches
@@ -562,8 +562,8 @@ function HowAClassWorks() {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-[#F8FAFC] border-b-4 border-[#0F172A] overflow-hidden">
-      <div className="max-w-5xl mx-auto px-4 md:px-6">
+    <section className="py-16 md:py-24 bg-[#FAFAFA] border-b-4 border-[#0F172A] overflow-hidden">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10 md:mb-16">
           <div className="inline-flex items-center gap-2 bg-[#FFD600] border-4 border-[#0F172A] text-[#0F172A] font-black text-[9px] md:text-[10px] uppercase tracking-[0.2em] px-3 md:px-4 py-1.5 md:py-2 mb-4 md:mb-6 shadow-brutal-soft">
             <BookOpen className="w-3 h-3 md:w-4 md:h-4" /> Inside a Class
@@ -638,7 +638,7 @@ function FAQ() {
 
   return (
     <section className="py-16 md:py-24 bg-[#FAFAFA] border-b-4 border-[#0F172A]">
-      <div className="max-w-3xl mx-auto px-4 md:px-6">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10 md:mb-16">
           <div className="inline-flex items-center gap-2 bg-[#0F172A] border-2 border-gray-800 text-gray-400 font-black text-[9px] md:text-[10px] uppercase tracking-[0.2em] px-3 md:px-4 py-1.5 md:py-2 mb-4 md:mb-6">
             <HelpCircle className="w-3 h-3 md:w-4 md:h-4" /> Common Questions
@@ -696,7 +696,7 @@ function Pricing() {
 
   return (
     <section id="pricing" className="py-16 md:py-24 bg-[#0F172A] text-white border-b-4 border-[#FFD600]">
-      <div className="max-w-5xl mx-auto px-4 md:px-6">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white uppercase tracking-tight mb-4 md:mb-6">
             Affordable plans that <br className="sm:hidden" /><span className="bg-[#FFD600] text-[#0F172A] px-2 md:px-3 py-1 transform inline-block -rotate-1 border-2 border-[#0F172A] mt-2 sm:mt-0">fit your budget.</span>
@@ -704,7 +704,7 @@ function Pricing() {
           <p className="text-sm md:text-lg text-gray-400 font-bold">Less than the cost of a math tutor. More impact on their future.</p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-12 max-w-4xl mx-auto px-2 sm:px-0">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-12 max-w-4xl mx-auto">
           {plans.map((plan, i) => (
             <div key={i} className={`bg-[#FAFAFA] rounded-sm p-5 md:p-8 border-4 border-transparent relative transition-transform ${plan.popular ? "border-[#FFD600] shadow-brutal-yellow md:shadow-brutal-yellow sm:-translate-y-4" : "border-gray-700 shadow-[6px_6px_0px_#333333] sm:mt-4"}`}>
               {plan.popular && (
@@ -760,45 +760,52 @@ function ContactFormSection() {
   };
 
   return (
-    <section id={FORM_SECTION_ID} className="py-16 md:py-24 bg-[#FAFAFA] border-b-4 border-[#0F172A] relative overflow-hidden">
+    <section id={FORM_SECTION_ID} className="py-12 md:py-20 bg-[#FAFAFA] border-b-4 border-[#0F172A] relative overflow-hidden">
       <div className="bg-subtle-grid absolute inset-0 opacity-40" />
-      <div className="max-w-6xl mx-auto px-4 md:px-6 flex flex-col lg:flex-row gap-12 md:gap-16 items-center relative z-10">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row gap-8 md:gap-12 items-start relative z-10">
         
-        <div className="w-full lg:w-1/2 text-center lg:text-left">
-          <div className="inline-flex items-center justify-center lg:justify-start gap-2 bg-green-100 text-green-700 font-black text-[9px] md:text-[10px] uppercase tracking-[0.2em] px-3 md:px-4 py-1.5 md:py-2 mb-4 md:mb-6 border-2 border-[#0F172A] shadow-brutal-soft">
+        <div className="w-full lg:w-1/2 text-center lg:text-left lg:sticky lg:top-24">
+          <div className="inline-flex items-center justify-center lg:justify-start gap-2 bg-green-100 text-green-700 font-black text-[9px] md:text-[10px] uppercase tracking-[0.2em] px-3 md:px-4 py-1.5 md:py-2 mb-3 md:mb-4 border-2 border-[#0F172A] shadow-brutal-soft">
             <CheckCircle className="w-3 h-3 md:w-4 md:h-4" /> Free Demo Available
           </div>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-[#0F172A] uppercase tracking-tight mb-6 md:mb-8 leading-none">
-            Your child is one class away from <br className="hidden sm:block lg:hidden"/><span className="bg-[#FFD600] px-2 py-1 transform inline-block -rotate-1 border-4 border-[#0F172A] shadow-brutal-soft md:shadow-brutal-soft mt-2">loving chess.</span>
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-[#0F172A] uppercase tracking-tight mb-4 md:mb-5 leading-none">
+            Your child is one class away from <span className="bg-[#FFD600] px-1.5 py-0.5 transform inline-block -rotate-1 border-3 border-[#0F172A] shadow-brutal-soft mt-1">loving chess.</span>
           </h2>
-          <p className="text-base md:text-xl text-gray-700 font-bold mb-8 md:mb-10 leading-relaxed max-w-lg mx-auto lg:mx-0">
+          <p className="text-sm md:text-base text-gray-700 font-bold mb-5 md:mb-6 leading-relaxed max-w-md mx-auto lg:mx-0">
             Fill in your details and we'll call you within 2 hours to schedule your child's free demo class. No payment needed.
           </p>
 
-          {/* Generated parent-child image - smaller, beside copy. Remove this block to revert */}
-          <div className="hidden lg:block w-full max-w-xs mx-auto lg:mx-0 mb-8 rounded-sm overflow-hidden border-4 border-[#0F172A] shadow-brutal-yellow">
+          {/* Parent-child image */}
+          <div className="hidden lg:block w-full max-w-[260px] mx-auto lg:mx-0 mb-5 rounded-sm overflow-hidden border-3 border-[#0F172A] shadow-brutal-yellow">
             <img src="/images/parent-child-chess.webp" alt="Mother and child bonding over a chess game" className="w-full aspect-[4/3] object-cover" loading="lazy" width="896" height="1200" />
           </div>
-          
-          <div className="space-y-4 md:space-y-6 max-w-sm mx-auto lg:mx-0">
-            <div className="flex items-center gap-4 md:gap-6 bg-[#FAFAFA] p-4 md:p-6 border-4 border-[#0F172A] shadow-brutal-soft md:shadow-brutal-soft text-left">
-              <Phone className="w-6 h-6 md:w-8 md:h-8 text-[#0F172A] shrink-0" />
-              <div>
-                <p className="font-black text-gray-400 uppercase tracking-widest text-[10px] md:text-xs mb-0.5 md:mb-1">Call or WhatsApp Us</p>
-                <p className="font-black text-xl md:text-2xl text-[#0F172A]">+91-8400979997</p>
-              </div>
+
+          <div className="flex items-center gap-4 bg-white p-3 md:p-4 border-3 border-[#0F172A] shadow-brutal-soft text-left max-w-xs mx-auto lg:mx-0 mb-4">
+            <Phone className="w-5 h-5 md:w-6 md:h-6 text-[#0F172A] shrink-0" />
+            <div>
+              <p className="font-black text-gray-400 uppercase tracking-widest text-[8px] md:text-[10px] mb-0.5">Call or WhatsApp Us</p>
+              <p className="font-black text-base md:text-lg text-[#0F172A]">+91-8400979997</p>
             </div>
+          </div>
+
+          <div className="hidden lg:flex items-center gap-3 text-left max-w-xs">
+            <div className="flex -space-x-2">
+              {["/images/testimonial-priya.webp", "/images/testimonial-vikram.webp"].map((src, i) => (
+                <img key={i} src={src} alt="" className="w-8 h-8 rounded-full border-2 border-white object-cover" loading="lazy" />
+              ))}
+            </div>
+            <p className="text-[10px] font-bold text-gray-500 leading-tight">Trusted by 1500+ families across 15+ countries</p>
           </div>
         </div>
 
         <div className="w-full lg:w-1/2">
-          <div className="bg-[#FAFAFA] p-6 sm:p-8 md:p-12 border-4 border-[#0F172A] shadow-brutal-soft md:shadow-brutal-soft relative mt-4 md:mt-0">
-            <div className="absolute -top-4 -right-4 md:-top-6 md:-right-6 bg-[#0F172A] text-[#FFD600] font-black uppercase tracking-widest text-[10px] md:text-xs px-3 md:px-5 py-2 md:py-3 border-4 border-[#0F172A] transform rotate-3 shadow-brutal-yellow">
+          <div className="bg-[#FAFAFA] p-6 sm:p-8 md:p-10 border-4 border-[#0F172A] shadow-brutal-soft relative">
+            <div className="absolute -top-3 -right-3 md:-top-5 md:-right-5 bg-[#0F172A] text-[#FFD600] font-black uppercase tracking-widest text-[9px] md:text-xs px-3 md:px-4 py-1.5 md:py-2 border-4 border-[#0F172A] transform rotate-3 shadow-brutal-yellow">
               Fast-Track
             </div>
-            <div className="mt-2 md:mt-4">
+            <div className="mt-1 md:mt-2">
               <BookingForm buttonTheme="yellow" buttonText="Book Free Demo Class" />
-              <p className="text-[8px] md:text-[10px] text-center font-black uppercase text-gray-400 tracking-widest mt-3 md:mt-4">We'll call you within 2 hours • No spam, ever.</p>
+              <p className="text-[8px] md:text-[10px] text-center font-black uppercase text-gray-400 tracking-widest mt-3">We'll call you within 2 hours • No spam, ever.</p>
             </div>
           </div>
         </div>
@@ -820,7 +827,7 @@ function StatBar() {
 
   return (
     <div className="bg-[#0F172A] py-8 border-b-4 border-[#FFD600]">
-      <div className="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 divide-x divide-gray-800">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-8 divide-x divide-gray-800">
         {stats.map((s, i) => (
           <FadeIn key={i} delay={i * 0.1} className={`text-center ${i % 2 === 0 ? "border-l-0" : ""}`}>
             <div className="text-2xl md:text-4xl font-black text-[#FFD600] mb-1"><AnimatedNumber value={s.value} suffix={s.suffix} /></div>
@@ -840,7 +847,7 @@ function ScreenTimeCalculator() {
   
   return (
     <section className="py-16 md:py-24 bg-[#FAFAFA] border-b-4 border-[#0F172A] overflow-hidden">
-      <div className="max-w-5xl mx-auto px-4 md:px-6">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10 md:mb-16">
           <div className="inline-flex items-center gap-2 bg-orange-100 text-orange-600 font-black text-[9px] md:text-[10px] uppercase tracking-[0.2em] px-3 md:px-4 py-1.5 md:py-2 mb-4 md:mb-6 border-2 border-[#0F172A] shadow-brutal-soft">
             <LineChart className="w-3 h-3 md:w-4 md:h-4" /> Every Parent Should See This
@@ -923,7 +930,7 @@ function GrowthProjector() {
       <div className="absolute inset-0 opacity-[0.06] mix-blend-screen pointer-events-none">
         <img src="/images/dark-section-texture.webp" alt="" className="w-full h-full object-cover" loading="lazy" width="1376" height="768" />
       </div>
-      <div className="max-w-6xl mx-auto px-4 md:px-6 flex flex-col lg:flex-row gap-12 md:gap-16 items-center relative z-10">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row gap-12 md:gap-16 items-center relative z-10">
         
         <div className="w-full lg:w-5/12 text-center lg:text-left">
           <h2 className="text-3xl sm:text-4xl md:text-6xl font-black text-white uppercase tracking-tight mb-4 md:mb-6 leading-none">
@@ -1051,7 +1058,7 @@ function SuccessStories() {
 
   return (
     <section className="py-16 md:py-24 bg-[#0F172A] border-b-4 border-[#FFD600] overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 md:px-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 md:mb-20">
           <div className="inline-flex items-center gap-2 bg-[#FFD600] border-2 border-[#0F172A] shadow-brutal-soft text-[#0F172A] font-black text-[9px] md:text-[10px] uppercase tracking-[0.2em] px-3 md:px-4 py-1.5 md:py-2 mb-4 md:mb-6">
             <Quote className="w-3 h-3 md:w-4 md:h-4" /> Verified Reviews
@@ -1135,7 +1142,7 @@ function StarPerformers() {
 
   return (
     <section className="py-16 md:py-24 bg-[#F8FAFC] border-b-4 border-[#0F172A] overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 md:px-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10 md:mb-16">
           <div className="inline-flex items-center gap-2 bg-[#0F172A] border-2 border-gray-800 text-gray-400 font-black text-[9px] md:text-[10px] uppercase tracking-[0.2em] px-3 md:px-4 py-1.5 md:py-2 mb-4 md:mb-6">
             <Award className="w-3 h-3 md:w-4 md:h-4" /> Achievements
@@ -1231,7 +1238,7 @@ function CohortPlacementQuiz() {
   return (
     <section id="assessments" className="py-20 md:py-24 bg-[#FAFAFA] border-b-4 border-[#0F172A] relative overflow-hidden">
       <div className="bg-subtle-grid absolute inset-0 opacity-40" />
-      <div className="max-w-4xl mx-auto px-4 md:px-6 relative z-10">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {step === 0 && (
           <div className="text-center">
@@ -1325,7 +1332,7 @@ function ChessVsOtherActivities() {
 
   return (
     <section className="py-16 md:py-24 bg-[#FAFAFA] border-b-4 border-[#0F172A] overflow-hidden">
-      <div className="max-w-6xl mx-auto px-4 md:px-6">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10 md:mb-16">
           <div className="inline-flex items-center gap-2 bg-blue-100 text-blue-700 font-black text-[9px] md:text-[10px] uppercase tracking-[0.2em] px-3 md:px-4 py-1.5 md:py-2 mb-4 md:mb-6 border-2 border-[#0F172A] shadow-brutal-soft">
             <BarChart className="w-3 h-3 md:w-4 md:h-4" /> Honest Comparison
@@ -1377,7 +1384,7 @@ function ChessVsOtherActivities() {
 function IndiaChessBoom() {
   return (
     <section className="py-12 md:py-16 bg-[#0F172A] border-b-4 border-[#FFD600] overflow-hidden">
-      <div className="max-w-6xl mx-auto px-4 md:px-6">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8 md:mb-12">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-white uppercase tracking-tight mb-3 md:mb-4 leading-none">
             India is living a <span className="text-[#FFD600]">chess revolution.</span>
@@ -1418,8 +1425,8 @@ function IndiaChessBoom() {
 
 function FounderStory() {
   return (
-    <section className="py-16 md:py-24 bg-[#FAFAFA] border-b-4 border-[#0F172A] overflow-hidden">
-      <div className="max-w-6xl mx-auto px-4 md:px-6">
+    <section className="py-16 md:py-24 bg-[#F8FAFC] border-b-4 border-[#0F172A] overflow-hidden">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10 md:mb-16">
           <div className="inline-flex items-center gap-2 bg-[#FFD600] border-2 border-[#0F172A] shadow-brutal-soft text-[#0F172A] font-black text-[9px] md:text-[10px] uppercase tracking-[0.2em] px-3 md:px-4 py-1.5 md:py-2 mb-4 md:mb-6">
             <Sparkles className="w-3 h-3 md:w-4 md:h-4" /> The Story Behind ChessWize
@@ -1489,20 +1496,20 @@ export default function Landing() {
       <TopNav />
       <Hero />
       <StatBar />
-      <ScreenTimeCalculator />
-      <GrowthProjector />
-      <CohortPlacementQuiz />
+      <IndiaChessBoom />
       <NeurologicalImpact />
+      <HowAClassWorks />
+      <ScreenTimeCalculator />
       <Curriculum />
+      <CohortPlacementQuiz />
       <Mentors />
-      <FounderStory />
       <SuccessStories />
       <StarPerformers />
-      <HowAClassWorks />
+      <GrowthProjector />
       <ChessVsOtherActivities />
-      <FAQ />
       <Pricing />
-      <IndiaChessBoom />
+      <FAQ />
+      <FounderStory />
       <ContactFormSection />
       <Footer />
       <LiveBookingToast />

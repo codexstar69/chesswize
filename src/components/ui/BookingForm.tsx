@@ -52,7 +52,7 @@ interface BookingFormProps {
   buttonTheme?: "dark" | "yellow";
 }
 
-const inputBase = "w-full px-3 py-2 md:py-2.5 bg-[#F8FAFC] border-2 focus:bg-[#FFF4E5] outline-none transition-colors font-bold text-[#0F172A] text-xs md:text-sm rounded-sm";
+const inputBase = "w-full px-3 py-2.5 md:py-3 bg-[#F8FAFC] border-2 focus:bg-[#FFF4E5] outline-none transition-colors font-bold text-[#0F172A] text-xs md:text-sm rounded-sm";
 const errBorder = "border-red-500 focus:border-red-500";
 const okBorder = "border-[#0F172A] focus:border-[#0F172A]";
 const labelCls = "text-[10px] font-black text-gray-500 uppercase tracking-widest mb-1.5 block";
@@ -160,7 +160,7 @@ export default function BookingForm({ buttonText = "Submit Application", buttonT
         ))}
       </div>
 
-      <form onSubmit={handleSubmit(onSubmit)} className="space-y-3 text-left w-full relative min-h-[280px]">
+      <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 text-left w-full relative min-h-[340px]">
         {/* Honeypot */}
         <div aria-hidden="true" className="absolute -left-[9999px] -top-[9999px] h-0 w-0 overflow-hidden opacity-0">
           <input {...register("website")} type="text" tabIndex={-1} autoComplete="off" />
@@ -168,10 +168,10 @@ export default function BookingForm({ buttonText = "Submit Application", buttonT
 
         {/* STEP 1: Basics */}
         {step === 1 && (
-          <div className="space-y-3 animate-in fade-in slide-in-from-right-4 duration-300">
+          <div className="space-y-4 animate-in fade-in slide-in-from-right-4 duration-300">
             <div>
-              <h3 className="text-base md:text-lg font-black uppercase tracking-tight text-[#0F172A] mb-0.5">Let's start with the student</h3>
-              <p className="text-[10px] md:text-xs font-bold text-gray-500 mb-3">We tailor every class to the child's age and location.</p>
+              <h3 className="text-lg md:text-xl font-black uppercase tracking-tight text-[#0F172A] mb-1">Let's start with the student</h3>
+              <p className="text-[10px] md:text-xs font-bold text-gray-500 mb-4">We tailor every class to the child's age and location.</p>
             </div>
             
             <div>

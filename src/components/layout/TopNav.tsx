@@ -23,7 +23,7 @@ export default function TopNav() {
   return (
     <>
       <nav className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-300 ${scrolled ? "py-2 md:py-3 border-b-[3px] border-[#0F172A] glass-nav shadow-premium" : "py-4 md:py-5 border-b border-slate-200 bg-[#FAFAFA]"}`}>
-        <div className="max-w-7xl mx-auto px-4 md:px-6 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-3 md:gap-4">
             <img src="/images/logo-side-black.svg" alt="ChessWize" className="h-10 sm:h-12 md:h-14 w-auto" />
           </Link>
