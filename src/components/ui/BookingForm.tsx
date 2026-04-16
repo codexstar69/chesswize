@@ -52,7 +52,7 @@ interface BookingFormProps {
   buttonTheme?: "dark" | "yellow";
 }
 
-const inputBase = "w-full px-4 py-3 bg-[#F8FAFC] border-2 focus:bg-[#FFF4E5] outline-none transition-colors font-bold text-[#0F172A] text-sm md:text-base rounded-sm";
+const inputBase = "w-full px-3 py-2 md:py-2.5 bg-[#F8FAFC] border-2 focus:bg-[#FFF4E5] outline-none transition-colors font-bold text-[#0F172A] text-xs md:text-sm rounded-sm";
 const errBorder = "border-red-500 focus:border-red-500";
 const okBorder = "border-[#0F172A] focus:border-[#0F172A]";
 const labelCls = "text-[10px] font-black text-gray-500 uppercase tracking-widest mb-1.5 block";
@@ -63,15 +63,15 @@ function SelectionCard({ icon: Icon, title, desc, selected, onClick, error }: an
   return (
     <div 
       onClick={onClick}
-      className={`p-4 border-4 rounded-sm cursor-pointer transition-all transform hover:-translate-y-1 ${selected ? 'border-[#FFD600] bg-[#FFF4E5] shadow-brutal-soft' : 'border-gray-200 bg-[#FAFAFA] hover:border-[#0F172A]'} ${error ? 'border-red-500' : ''}`}
+      className={`p-3 border-3 rounded-sm cursor-pointer transition-all transform hover:-translate-y-0.5 ${selected ? 'border-[#FFD600] bg-[#FFF4E5] shadow-brutal-soft' : 'border-gray-200 bg-[#FAFAFA] hover:border-[#0F172A]'} ${error ? 'border-red-500' : ''}`}
     >
-      <div className="flex items-start gap-3">
-        <div className={`p-2 shrink-0 border-2 ${selected ? 'bg-[#FFD600] border-[#0F172A]' : 'bg-gray-100 border-gray-300'}`}>
-          <Icon className={`w-5 h-5 ${selected ? 'text-[#0F172A]' : 'text-gray-500'}`} />
+      <div className="flex items-start gap-2">
+        <div className={`p-1.5 shrink-0 border-2 ${selected ? 'bg-[#FFD600] border-[#0F172A]' : 'bg-gray-100 border-gray-300'}`}>
+          <Icon className={`w-4 h-4 ${selected ? 'text-[#0F172A]' : 'text-gray-500'}`} />
         </div>
         <div>
-          <h4 className={`font-black text-sm uppercase tracking-tight mb-1 ${selected ? 'text-[#0F172A]' : 'text-gray-600'}`}>{title}</h4>
-          <p className="text-[10px] font-bold text-gray-500 leading-snug">{desc}</p>
+          <h4 className={`font-black text-xs uppercase tracking-tight mb-0.5 ${selected ? 'text-[#0F172A]' : 'text-gray-600'}`}>{title}</h4>
+          <p className="text-[9px] font-bold text-gray-500 leading-snug">{desc}</p>
         </div>
       </div>
     </div>
@@ -149,18 +149,18 @@ export default function BookingForm({ buttonText = "Submit Application", buttonT
   return (
     <div className="w-full">
       {/* Step Indicator */}
-      <div className="flex items-center gap-2 mb-6 md:mb-8">
+      <div className="flex items-center gap-2 mb-4 md:mb-5">
         {[1, 2, 3, 4].map((num) => (
-          <div key={num} className="flex-1 flex flex-col items-center gap-2 relative">
-            <div className={`w-full h-1.5 md:h-2 border-2 border-[#0F172A] rounded-full transition-colors ${step >= num ? 'bg-[#FFD600]' : 'bg-gray-200'}`} />
-            <span className={`text-[8px] md:text-[9px] font-black uppercase tracking-widest ${step >= num ? 'text-[#0F172A]' : 'text-gray-400'}`}>
+          <div key={num} className="flex-1 flex flex-col items-center gap-1.5 relative">
+            <div className={`w-full h-1 md:h-1.5 border-2 border-[#0F172A] rounded-full transition-colors ${step >= num ? 'bg-[#FFD600]' : 'bg-gray-200'}`} />
+            <span className={`text-[7px] md:text-[8px] font-black uppercase tracking-widest ${step >= num ? 'text-[#0F172A]' : 'text-gray-400'}`}>
               Step {num}
             </span>
           </div>
         ))}
       </div>
 
-      <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 text-left w-full relative min-h-[350px]">
+      <form onSubmit={handleSubmit(onSubmit)} className="space-y-3 text-left w-full relative min-h-[280px]">
         {/* Honeypot */}
         <div aria-hidden="true" className="absolute -left-[9999px] -top-[9999px] h-0 w-0 overflow-hidden opacity-0">
           <input {...register("website")} type="text" tabIndex={-1} autoComplete="off" />
@@ -168,10 +168,10 @@ export default function BookingForm({ buttonText = "Submit Application", buttonT
 
         {/* STEP 1: Basics */}
         {step === 1 && (
-          <div className="space-y-5 animate-in fade-in slide-in-from-right-4 duration-300">
+          <div className="space-y-3 animate-in fade-in slide-in-from-right-4 duration-300">
             <div>
-              <h3 className="text-xl md:text-2xl font-black uppercase tracking-tight text-[#0F172A] mb-1">Let's start with the student</h3>
-              <p className="text-xs font-bold text-gray-500 mb-6">We tailor every class to the child's age and location.</p>
+              <h3 className="text-base md:text-lg font-black uppercase tracking-tight text-[#0F172A] mb-0.5">Let's start with the student</h3>
+              <p className="text-[10px] md:text-xs font-bold text-gray-500 mb-3">We tailor every class to the child's age and location.</p>
             </div>
             
             <div>
@@ -195,7 +195,7 @@ export default function BookingForm({ buttonText = "Submit Application", buttonT
               </div>
             </div>
             
-            <button type="button" onClick={() => nextStep(["childName", "age", "city"])} className={`w-full mt-6 py-4 font-black text-sm uppercase tracking-widest border-2 rounded-sm hover:translate-y-[2px] transition-all flex items-center justify-center gap-2 ${buttonClasses}`}>
+            <button type="button" onClick={() => nextStep(["childName", "age", "city"])} className={`w-full mt-3 py-3 font-black text-xs uppercase tracking-widest border-2 rounded-sm hover:translate-y-[2px] transition-all flex items-center justify-center gap-2 ${buttonClasses}`}>
               Next: Experience <ArrowRight className="w-4 h-4" />
             </button>
           </div>
@@ -203,10 +203,10 @@ export default function BookingForm({ buttonText = "Submit Application", buttonT
 
         {/* STEP 2: Experience & Setup */}
         {step === 2 && (
-          <div className="space-y-5 animate-in fade-in slide-in-from-right-4 duration-300">
+          <div className="space-y-3 animate-in fade-in slide-in-from-right-4 duration-300">
             <div>
-              <h3 className="text-xl md:text-2xl font-black uppercase tracking-tight text-[#0F172A] mb-1">Assess their level & setup</h3>
-              <p className="text-xs font-bold text-gray-500 mb-4">This helps us assign the right coach for the demo.</p>
+              <h3 className="text-base md:text-lg font-black uppercase tracking-tight text-[#0F172A] mb-0.5">Assess their level & setup</h3>
+              <p className="text-[10px] md:text-xs font-bold text-gray-500 mb-3">This helps us assign the right coach for the demo.</p>
             </div>
 
             <div>
@@ -246,52 +246,52 @@ export default function BookingForm({ buttonText = "Submit Application", buttonT
               </div>
             </div>
             
-            <div className="flex gap-3 pt-2">
-              <button type="button" onClick={() => setStep(1)} className="py-4 px-5 font-black text-sm uppercase border-2 border-[#0F172A] rounded-sm bg-gray-100 text-[#0F172A] hover:bg-gray-200 transition-colors"><ArrowLeft className="w-4 h-4 md:w-5 md:h-5" /></button>
-              <button type="button" onClick={() => nextStep(["experience", "device", "internet"])} className={`flex-1 py-4 font-black text-sm uppercase tracking-widest border-2 rounded-sm hover:translate-y-[2px] transition-all flex items-center justify-center gap-2 ${buttonClasses}`}>Next: Goals <ArrowRight className="w-4 h-4" /></button>
+            <div className="flex gap-3 pt-1">
+              <button type="button" onClick={() => setStep(1)} className="py-3 px-4 font-black text-xs uppercase border-2 border-[#0F172A] rounded-sm bg-gray-100 text-[#0F172A] hover:bg-gray-200 transition-colors"><ArrowLeft className="w-4 h-4" /></button>
+              <button type="button" onClick={() => nextStep(["experience", "device", "internet"])} className={`flex-1 py-3 font-black text-xs uppercase tracking-widest border-2 rounded-sm hover:translate-y-[2px] transition-all flex items-center justify-center gap-2 ${buttonClasses}`}>Next: Goals <ArrowRight className="w-4 h-4" /></button>
             </div>
           </div>
         )}
 
         {/* STEP 3: Goals & Concerns */}
         {step === 3 && (
-          <div className="space-y-5 animate-in fade-in slide-in-from-right-4 duration-300">
+          <div className="space-y-2.5 animate-in fade-in slide-in-from-right-4 duration-300">
             <div>
-              <h3 className="text-xl md:text-2xl font-black uppercase tracking-tight text-[#0F172A] mb-1">What are your goals?</h3>
-              <p className="text-xs font-bold text-gray-500 mb-4">We want to make sure we're aligned with your expectations.</p>
+              <h3 className="text-sm md:text-base font-black uppercase tracking-tight text-[#0F172A] mb-0.5">What are your goals?</h3>
+              <p className="text-[9px] md:text-[10px] font-bold text-gray-500 mb-2">So we can match the right program.</p>
             </div>
 
             <div>
               <label className={labelCls}>Primary Goal</label>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                <SelectionCard icon={Brain} title="Brain Development" desc="Improve focus, math skills & reduce screen time" selected={watchGoal === "Brain Development"} error={!!errors.goal} onClick={() => { setValue("goal", "Brain Development"); trigger("goal"); }} />
-                <SelectionCard icon={Trophy} title="Competitive Play" desc="Prepare for tournaments & get a rating" selected={watchGoal === "Tournaments"} error={!!errors.goal} onClick={() => { setValue("goal", "Tournaments"); trigger("goal"); }} />
+              <div className="grid grid-cols-2 gap-2">
+                <SelectionCard icon={Brain} title="Brain Development" desc="Focus, math & less screen time" selected={watchGoal === "Brain Development"} error={!!errors.goal} onClick={() => { setValue("goal", "Brain Development"); trigger("goal"); }} />
+                <SelectionCard icon={Trophy} title="Competitive Play" desc="Tournaments & ratings" selected={watchGoal === "Tournaments"} error={!!errors.goal} onClick={() => { setValue("goal", "Tournaments"); trigger("goal"); }} />
               </div>
               {errors.goal && <p className={errMsg}>{errors.goal.message}</p>}
             </div>
 
             <div>
-              <label className={labelCls}>Tell us about your child's learning challenges (if any)</label>
-              <textarea {...register("concern")} rows={3} className={`${inputBase} resize-none ${errors.concern ? errBorder : okBorder}`} placeholder="e.g. Spends too much time on iPad, struggles to sit still for 10 mins..." />
+              <label className={labelCls}>Learning challenges (optional)</label>
+              <textarea {...register("concern")} rows={2} className={`${inputBase} resize-none ${errors.concern ? errBorder : okBorder}`} placeholder="e.g. Too much screen time, can't sit still..." />
               {errors.concern && <p className={errMsg}>{errors.concern.message}</p>}
             </div>
             
-            <div className="flex gap-3 pt-2">
-              <button type="button" onClick={() => setStep(2)} className="py-4 px-5 font-black text-sm uppercase border-2 border-[#0F172A] rounded-sm bg-gray-100 text-[#0F172A] hover:bg-gray-200 transition-colors"><ArrowLeft className="w-4 h-4 md:w-5 md:h-5" /></button>
-              <button type="button" onClick={() => nextStep(["goal", "concern"])} className={`flex-1 py-4 font-black text-sm uppercase tracking-widest border-2 rounded-sm hover:translate-y-[2px] transition-all flex items-center justify-center gap-2 ${buttonClasses}`}>Final Step <ArrowRight className="w-4 h-4" /></button>
+            <div className="flex gap-3 pt-1">
+              <button type="button" onClick={() => setStep(2)} className="py-3 px-4 font-black text-xs uppercase border-2 border-[#0F172A] rounded-sm bg-gray-100 text-[#0F172A] hover:bg-gray-200 transition-colors"><ArrowLeft className="w-4 h-4" /></button>
+              <button type="button" onClick={() => nextStep(["goal", "concern"])} className={`flex-1 py-3 font-black text-xs uppercase tracking-widest border-2 rounded-sm hover:translate-y-[2px] transition-all flex items-center justify-center gap-2 ${buttonClasses}`}>Final Step <ArrowRight className="w-4 h-4" /></button>
             </div>
           </div>
         )}
 
         {/* STEP 4: Contact & Verification */}
         {step === 4 && (
-          <div className="space-y-4 animate-in fade-in slide-in-from-right-4 duration-300">
-            <div className="p-4 bg-green-50 border-2 border-green-200 rounded-sm mb-4">
-              <p className="text-xs font-bold text-green-800 flex items-start gap-2">
-                <CheckCircle className="w-4 h-4 shrink-0 mt-0.5" /> Perfect! Where should we send the Zoom link and syllabus?
+          <div className="space-y-2.5 animate-in fade-in slide-in-from-right-4 duration-300">
+            <div className="p-2.5 bg-green-50 border-2 border-green-200 rounded-sm">
+              <p className="text-[10px] font-bold text-green-800 flex items-start gap-2">
+                <CheckCircle className="w-3.5 h-3.5 shrink-0 mt-0.5" /> Where should we send the Zoom link and syllabus?
               </p>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-2.5">
               <div>
                 <label className={labelCls}>Parent's Name</label>
                 <input {...register("parentName")} type="text" className={`${inputBase} ${errors.parentName ? errBorder : okBorder}`} placeholder="e.g. Rahul Sharma" />
@@ -304,17 +304,17 @@ export default function BookingForm({ buttonText = "Submit Application", buttonT
               </div>
             </div>
             
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-2.5">
               <div>
                 <label className={labelCls}>Email Address</label>
                 <input {...register("email")} type="email" className={`${inputBase} ${errors.email ? errBorder : okBorder}`} placeholder="name@email.com" />
                 {errors.email && <p className={errMsg}>{errors.email.message}</p>}
               </div>
               <div>
-                <label className={labelCls}>Human Verification</label>
-                <div className="flex items-center gap-2">
-                  <div className="bg-gray-100 border-2 border-gray-300 px-3 py-3 rounded-sm font-black text-[#0F172A] whitespace-nowrap shrink-0">
-                    {captchaMath.a} + {captchaMath.b} =
+                <label className={labelCls}>Quick Verify</label>
+                <div className="flex items-center gap-1.5">
+                  <div className="bg-gray-100 border-2 border-gray-300 px-2.5 py-2.5 rounded-sm font-black text-[#0F172A] whitespace-nowrap shrink-0 text-xs">
+                    {captchaMath.a}+{captchaMath.b}=
                   </div>
                   <input {...register("captcha")} type="number" className={`${inputBase} ${errors.captcha ? errBorder : okBorder}`} placeholder="?" />
                 </div>
@@ -322,13 +322,13 @@ export default function BookingForm({ buttonText = "Submit Application", buttonT
               </div>
             </div>
             
-            <div className="flex gap-3 mt-6">
-              <button type="button" onClick={() => setStep(3)} className="py-4 px-5 font-black text-sm uppercase border-2 border-[#0F172A] rounded-sm bg-gray-100 text-[#0F172A] hover:bg-gray-200 transition-colors"><ArrowLeft className="w-4 h-4 md:w-5 md:h-5" /></button>
-              <button type="submit" disabled={isSubmitting} className={`flex-1 py-4 font-black text-sm uppercase tracking-widest border-2 rounded-sm hover:translate-y-[2px] transition-all flex items-center justify-center gap-2 ${buttonClasses}`}>
+            <div className="flex gap-2.5 pt-1">
+              <button type="button" onClick={() => setStep(3)} className="py-3 px-4 font-black text-xs uppercase border-2 border-[#0F172A] rounded-sm bg-gray-100 text-[#0F172A] hover:bg-gray-200 transition-colors"><ArrowLeft className="w-4 h-4" /></button>
+              <button type="submit" disabled={isSubmitting} className={`flex-1 py-3 font-black text-xs uppercase tracking-widest border-2 rounded-sm hover:translate-y-[2px] transition-all flex items-center justify-center gap-2 ${buttonClasses}`}>
                 {isSubmitting ? 'Processing...' : buttonText} <ShieldAlert className="w-4 h-4" />
               </button>
             </div>
-            <p className="text-[9px] text-center font-bold text-gray-400 uppercase tracking-widest mt-2">By submitting, you confirm you are a human parent, not a bot.</p>
+            <p className="text-[8px] text-center font-bold text-gray-400 uppercase tracking-widest">By submitting, you confirm you are a human parent, not a bot.</p>
           </div>
         )}
       </form>

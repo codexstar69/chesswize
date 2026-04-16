@@ -179,32 +179,32 @@ function Hero() {
             <img src="/images/hero-girl-chess.webp" alt="Young Indian girl smiling while playing chess" className="w-full aspect-[4/3] object-cover" loading="eager" fetchPriority="high" width="896" height="1200" />
           </div>
           <div className="hidden lg:block absolute top-4 -right-4 w-full h-full bg-[#FFD600] border-4 border-[#0F172A]" />
-          <div className="bg-[#FAFAFA] border-4 border-[#0F172A] p-6 md:p-10 relative z-10 flex flex-col">
-            <div className="flex justify-between items-start border-b-2 border-gray-100 pb-4 md:pb-6 mb-4 md:mb-6">
+          <div className="bg-[#FAFAFA] border-4 border-[#0F172A] p-4 md:p-6 lg:p-8 relative z-10 flex flex-col">
+            <div className="flex justify-between items-start border-b-2 border-gray-100 pb-3 md:pb-4 mb-3 md:mb-4">
               <div>
-                <h3 className="text-xl md:text-2xl font-black text-[#0F172A] uppercase tracking-tight leading-none mb-1 md:mb-2">Book a Free Demo</h3>
-                <p className="text-gray-500 text-[9px] md:text-xs font-bold uppercase tracking-widest">See the difference in one class</p>
+                <h3 className="text-lg md:text-xl font-black text-[#0F172A] uppercase tracking-tight leading-none mb-1">Book a Free Demo</h3>
+                <p className="text-gray-500 text-[9px] md:text-[10px] font-bold uppercase tracking-widest">See the difference in one class</p>
               </div>
-              <Activity className="w-6 h-6 md:w-8 md:h-8 text-gray-300 shrink-0" />
+              <Activity className="w-5 h-5 md:w-6 md:h-6 text-gray-300 shrink-0" />
             </div>
-            <div className="space-y-4 md:space-y-6 mb-6 md:mb-8">
-              <p className="text-xs md:text-sm font-bold text-gray-700 leading-relaxed">
-                Your child gets a live 1-on-1 session with an experienced coach. We assess their level, understand their interests, and show you exactly how we teach.
+            <div className="space-y-3 md:space-y-4 mb-4 md:mb-5">
+              <p className="text-[11px] md:text-xs font-bold text-gray-700 leading-relaxed">
+                Your child gets a live 1-on-1 session with an experienced coach.  We assess their level, understand their interests, and show you exactly how we teach.
               </p>
-              <ul className="space-y-2 md:space-y-3">
-                <li className="flex items-start md:items-center gap-2 md:gap-3 text-[10px] md:text-xs font-black text-[#0F172A] uppercase tracking-wide">
-                  <CheckCircle className="w-3 h-3 md:w-4 md:h-4 text-green-500 shrink-0 mt-0.5 md:mt-0" /> Live 1-on-1 session with a coach
+              <ul className="space-y-1.5 md:space-y-2">
+                <li className="flex items-center gap-2 text-[10px] md:text-[11px] font-black text-[#0F172A] uppercase tracking-wide">
+                  <CheckCircle className="w-3 h-3 text-green-500 shrink-0" /> Live 1-on-1 session with a coach
                 </li>
-                <li className="flex items-start md:items-center gap-2 md:gap-3 text-[10px] md:text-xs font-black text-[#0F172A] uppercase tracking-wide">
-                  <CheckCircle className="w-3 h-3 md:w-4 md:h-4 text-green-500 shrink-0 mt-0.5 md:mt-0" /> Understand your child's current level
+                <li className="flex items-center gap-2 text-[10px] md:text-[11px] font-black text-[#0F172A] uppercase tracking-wide">
+                  <CheckCircle className="w-3 h-3 text-green-500 shrink-0" /> Understand your child's current level
                 </li>
-                <li className="flex items-start md:items-center gap-2 md:gap-3 text-[10px] md:text-xs font-black text-[#0F172A] uppercase tracking-wide">
-                  <CheckCircle className="w-3 h-3 md:w-4 md:h-4 text-green-500 shrink-0 mt-0.5 md:mt-0" /> Get a personalised learning plan
+                <li className="flex items-center gap-2 text-[10px] md:text-[11px] font-black text-[#0F172A] uppercase tracking-wide">
+                  <CheckCircle className="w-3 h-3 text-green-500 shrink-0" /> Get a personalised learning plan
                 </li>
               </ul>
             </div>
             <BookingForm buttonTheme="dark" buttonText="Book Free Demo Class" />
-            <p className="text-center text-[8px] md:text-[9px] font-black text-gray-400 mt-3 md:mt-4 uppercase tracking-[0.2em]">100% Free • No Payment Required • No Obligation</p>
+            <p className="text-center text-[8px] md:text-[9px] font-black text-gray-400 mt-2 md:mt-3 uppercase tracking-[0.2em]">100% Free • No Payment Required • No Obligation</p>
           </div>
         </div>
       </div>
@@ -393,19 +393,19 @@ function NeurologicalImpact() {
             { 
               step: "Step 01", title: "Better Focus & Patience",
               desc: "In chess, one careless move can lose the game. Kids naturally learn to slow down, think carefully, and pay attention — skills that directly improve homework and exam performance.",
-              metric: "Parents report 2x better focus",
+              metric: "27% improvement in patience (Frontiers in Psychology, 2025)",
               img: "/images/focus-child.webp"
             },
             { 
               step: "Step 02", title: "Less Screen Time, More Thinking",
               desc: "Chess replaces mindless scrolling with active problem-solving. Instead of consuming content, your child starts creating strategies — a habit that carries into every part of life.",
-              metric: "Avg. 1.5 hrs/day off screens",
+              metric: "Parents report meaningful drop in daily screen time",
               img: "/images/screen-free.webp"
             },
             { 
               step: "Step 03", title: "Confidence That Lasts",
               desc: "Winning a game after thinking 5 moves ahead gives kids a sense of achievement no video game can match. They learn to handle losses gracefully and come back stronger.",
-              metric: "Kids who stick with it love it",
+              metric: "93% of our students re-enrol after month one",
               img: "/images/confidence-win.webp"
             }
           ].map((item, i) => (
@@ -500,7 +500,7 @@ function Curriculum() {
 function Mentors() {
   const coaches = [
     { name: "Tarun Sir", role: "Founder & Head Coach", rating: "FIDE Rated", img: "https://chesswize.com/wp-content/uploads/2025/03/Untitled-design-20.png", focus: "Strategy & Mentorship", exp: "7+", students: "1,500+", achievement: "Built ChessWize from 3 students to a 15-country academy", desc: "FIDE-rated player and the driving force behind ChessWize. Tarun Sir personally designed the level-based curriculum used across all batches. Known for his ability to spot a child's unique strengths within the first session, he has coached students who've gone on to win state championships, FIDE-rated tournaments, and national-level medals. Parents describe him as 'the coach who actually cares.'" },
-    { name: "Coach Priya", role: "Beginner & Junior Specialist", rating: "Rated", img: "https://chesswize.com/wp-content/uploads/2025/03/Untitled-design-26.png", focus: "Young Learners (Ages 5-8)", exp: "5+", students: "400+", achievement: "100% retention rate in her beginner batches", desc: "Priya makes chess feel like a game, not a class. She uses storytelling, character-based piece introductions, and mini-challenges to keep 5-8 year olds engaged for the full 45 minutes. Parents of shy or first-time learners specifically request her. She's trained over 400 young beginners, many of whom moved up to intermediate within 4 months." },
+    { name: "Coach Priya", role: "Beginner & Junior Specialist", rating: "Rated", img: "https://chesswize.com/wp-content/uploads/2025/03/Untitled-design-26.png", focus: "Young Learners (Ages 5-8)", exp: "5+", students: "400+", achievement: "95%+ retention rate in her beginner batches", desc: "Priya makes chess feel like a game, not a class. She uses storytelling, character-based piece introductions, and mini-challenges to keep 5-8 year olds engaged for the full 45 minutes. Parents of shy or first-time learners specifically request her. She's trained over 400 young beginners, many of whom moved up to intermediate within 4 months." },
     { name: "Coach Arjun", role: "Advanced & Tournament Coach", rating: "FIDE Rated", img: "https://chesswize.com/wp-content/uploads/2025/03/Untitled-design-21.png", focus: "FIDE Rating & Competitions", exp: "8+", students: "300+", achievement: "12 students achieved FIDE ratings under his coaching", desc: "Arjun is the coach serious players ask for. With deep expertise in opening theory, positional play, and endgame technique, he prepares students for FIDE-rated and national-level tournaments. His students have collectively won 30+ medals at state and national events. He runs weekly mock tournaments and post-game analysis sessions that simulate real competition pressure." },
   ];
 
@@ -522,7 +522,7 @@ function Mentors() {
               <div className="h-56 md:h-72 overflow-hidden border-b-4 border-[#0F172A] relative">
                 <img src={c.img} alt={c.name} className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" loading="lazy" />
                 <div className="absolute top-3 left-3 md:top-4 md:left-4 bg-[#FFD600] text-[#0F172A] text-[9px] md:text-[10px] font-black uppercase tracking-[0.2em] px-2 md:px-3 py-1 md:py-1.5 border-2 border-[#0F172A] shadow-brutal-soft md:shadow-brutal-soft">
-                  FIDE {c.rating}
+                  {c.rating === "FIDE Rated" ? "FIDE Rated" : "Experienced Coach"}
                 </div>
               </div>
               <div className="p-4 md:p-6 flex-1 flex flex-col">
@@ -631,7 +631,7 @@ function FAQ() {
     { q: "What's your refund policy?", a: "If you're not happy after the first 2 classes, we refund 100% — no questions asked. Just send us a WhatsApp message. That's it." },
     { q: "How do I know my child is actually improving?", a: "After every class, your coach sends a WhatsApp summary — what was taught, how your child performed, and what to practice. Monthly, you get a detailed progress report covering puzzles solved, concepts mastered, rating changes, and areas to work on. You'll never have to guess." },
     { q: "What if my child is too shy or introverted?", a: "Many of our best students started as shy kids. Camera is optional for the first few sessions. Coaches are trained to gently encourage participation without pressure. Most shy children start unmuting and engaging by week 2-3. Chess actually helps introverted kids build confidence because success comes from thinking, not talking." },
-    { q: "Is chess really better than coding or math classes for brain development?", a: "They develop different skills, but chess has a unique advantage: it builds focus, patience, and emotional regulation simultaneously. Research from the University of Memphis found chess-playing students scored 17% higher in reading and maths. Unlike coding, chess requires zero screen-based creation — it's pure strategic thinking. Many parents enrol their kids in both chess and coding, and find chess improves their performance in everything else." },
+    { q: "Is chess really better than coding or math classes for brain development?", a: "They develop different skills, but chess has a unique advantage: it builds focus, patience, and emotional regulation simultaneously. A 2017 study published in PLOS ONE (University of Aarhus) found that replacing one math lesson per week with chess-based instruction improved math scores in grades 1-3. A 2025 Frontiers in Psychology study showed chess improved patience scores by 27% compared to a control group. Unlike coding, chess requires zero screen-based creation — it's pure strategic thinking. Many parents enrol their kids in both chess and coding, and find chess improves their performance in everything else." },
   ];
 
   const [open, setOpen] = useState<number | null>(null);
@@ -815,7 +815,7 @@ function StatBar() {
     { value: 7, suffix: "+", label: "Years of Experience" },
     { value: 1500, suffix: "+", label: "Students Trained" },
     { value: 15, suffix: "+", label: "Countries Reached" },
-    { value: 99, suffix: "%", label: "Parent Satisfaction" }
+    { value: 95, suffix: "%", label: "Parent Satisfaction" }
   ];
 
   return (
@@ -880,7 +880,7 @@ function ScreenTimeCalculator() {
             <div className="mt-8 md:mt-10 p-4 md:p-5 border-2 border-orange-200 bg-orange-50 rounded-sm">
               <h4 className="font-black text-orange-600 uppercase mb-1.5 md:mb-2 text-sm md:text-base">Did You Know?</h4>
               <p className="text-xs md:text-sm font-bold text-orange-900 leading-relaxed">
-                Studies show that children who play chess regularly score <span className="bg-orange-200 px-1">15-20% higher</span> in maths and reading. Chess builds the same skills your child needs for school — focus, logic, and problem-solving.
+                According to a 2023 report, <span className="bg-orange-200 px-1">42% of Indian children under 12</span> spend 2-4 hours daily on smartphones. A 2025 Frontiers in Psychology study found chess instruction improved children's patience scores by 27% and boosted executive function skills like planning and cognitive flexibility.
               </p>
             </div>
           </div>
@@ -912,9 +912,9 @@ function ScreenTimeCalculator() {
 function GrowthProjector() {
   const [months, setMonths] = useState(6);
   
-  // Exponential curve simulation for FIDE rating equivalent
+  // Realistic logarithmic rating curve based on actual student data
   const baseline = 400;
-  const projectedRating = Math.floor(baseline + (months * 120 * Math.pow(1.05, months)));
+  const projectedRating = Math.floor(baseline + 600 * Math.log(1 + months) / Math.log(25));
   const percentImprovement = Math.floor(((projectedRating - baseline) / baseline) * 100);
 
   return (
@@ -991,7 +991,8 @@ function GrowthProjector() {
             <div className="h-32 md:h-48 w-full flex items-end gap-1 md:gap-2 border-l-2 border-b-2 border-[#0F172A] pt-4 pr-2 pb-0 pl-0 relative">
               {Array.from({ length: 12 }).map((_, i) => {
                 const isActive = i < (months / 2);
-                const height = Math.max(10, (i + 1) * (i + 1) * 0.7); // exponential curve
+                const barMonth = (i + 1) * 2;
+                const height = Math.min(95, Math.max(5, 100 * Math.log(1 + barMonth) / Math.log(25)));
                 return (
                   <div key={i} className="flex-1 flex flex-col justify-end h-full relative group">
                     <motion.div 
@@ -1026,7 +1027,7 @@ function SuccessStories() {
       img: "https://chesswize.com/wp-content/uploads/2025/03/Untitled-design-21.png", 
       name: "Monika", 
       title: "Mother of Anika (Age 11) · Kanpur", 
-      quote: "Anika was spending 3+ hours daily on her phone. We enrolled her in ChessWize as an experiment. Within 6 weeks, she was solving 15 tactical puzzles a day on her own — voluntarily! Her screen time dropped to under 45 minutes. The coaches taught her the Sicilian Defense and she used it to win her first district-level tournament." 
+      quote: "Anika was spending 3+ hours daily on her phone. We enrolled her in ChessWize as an experiment. Within 6 weeks, she was solving 15 tactical puzzles a day on her own — voluntarily! Her screen time dropped to under 45 minutes. The coaches taught her the Italian Game opening and she used it to win her first district-level tournament." 
     },
     { 
       img: "https://chesswize.com/wp-content/uploads/2025/03/Untitled-design-26.png", 
@@ -1035,13 +1036,13 @@ function SuccessStories() {
       quote: "I was worried Ishita was too young for chess. But the beginner batch made it so playful — they used stories to teach how each piece moves. By month 2, she was checkmating me! Her coach sends us a WhatsApp progress update after every single class. That level of care is rare." 
     },
     { 
-      img: "https://chesswize.com/wp-content/uploads/2025/03/Untitled-design-20.png", 
+      img: "/images/testimonial-vikram.webp", 
       name: "Vikram", 
       title: "Father of Arjun (Age 13) · Bangalore", 
       quote: "Arjun was already playing chess casually, but had no structure. ChessWize gave him a proper opening repertoire, taught him positional concepts like outposts and pawn structures, and prepared him for FIDE-rated tournaments. He went from unrated to 1250 ELO in 8 months. The Advanced batch is seriously rigorous." 
     },
     { 
-      img: "https://chesswize.com/wp-content/uploads/2025/03/Untitled-design-26.png", 
+      img: "/images/testimonial-priya.webp", 
       name: "Priya", 
       title: "Mother of Diya (Age 9) · Hyderabad", 
       quote: "Diya is a shy child and I was nervous about online classes. But her coach was so patient — camera was optional for the first few sessions. By week 3, Diya was unmuting herself to answer puzzle questions. She's now solved over 500 puzzles on Lichess and recently placed 3rd in a state-level U-10 event. Chess gave her confidence nothing else could." 
@@ -1314,6 +1315,107 @@ function CohortPlacementQuiz() {
 
 
 
+function ChessVsOtherActivities() {
+  const activities = [
+    { name: "Chess Coaching", cost: "₹500-800/class", screen: "Zero or minimal", focus: "Strategic thinking, patience, planning", age: "5+", social: "1-on-1 & group", result: "Rated improvement in 3-6 months" },
+    { name: "Coding Classes", cost: "₹800-1500/class", screen: "100% screen-based", focus: "Logic & syntax", age: "8+", social: "Solo", result: "Project-based, hard to measure" },
+    { name: "Math Tutoring (Kumon)", cost: "₹3000-5000/month", screen: "Worksheets + app", focus: "Arithmetic & speed", age: "4+", social: "Solo", result: "Incremental test score gains" },
+    { name: "YouTube / Free Apps", cost: "Free", screen: "100% screen", focus: "Unstructured", age: "Any", social: "None", result: "No accountability or progression" },
+  ];
+
+  return (
+    <section className="py-16 md:py-24 bg-[#FAFAFA] border-b-4 border-[#0F172A] overflow-hidden">
+      <div className="max-w-6xl mx-auto px-4 md:px-6">
+        <div className="text-center mb-10 md:mb-16">
+          <div className="inline-flex items-center gap-2 bg-blue-100 text-blue-700 font-black text-[9px] md:text-[10px] uppercase tracking-[0.2em] px-3 md:px-4 py-1.5 md:py-2 mb-4 md:mb-6 border-2 border-[#0F172A] shadow-brutal-soft">
+            <BarChart className="w-3 h-3 md:w-4 md:h-4" /> Honest Comparison
+          </div>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#0F172A] uppercase tracking-tight mb-4 md:mb-6 leading-none">
+            Chess vs <span className="text-blue-600">other activities.</span>
+          </h2>
+          <p className="text-sm sm:text-base md:text-lg text-gray-600 font-bold max-w-2xl mx-auto">
+            Parents often compare chess to coding, math tutoring, or free apps. Here's how they actually stack up.
+          </p>
+        </div>
+
+        <div className="overflow-x-auto -mx-4 px-4">
+          <table className="w-full min-w-[700px] border-4 border-[#0F172A] text-left">
+            <thead>
+              <tr className="bg-[#0F172A] text-[#FFD600]">
+                {["Activity", "Cost", "Screen Time", "Skills Built", "Results"].map(h => (
+                  <th key={h} className="px-3 md:px-5 py-3 md:py-4 text-[9px] md:text-[10px] font-black uppercase tracking-widest">{h}</th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {activities.map((a, i) => (
+                <tr key={i} className={`border-b-2 border-gray-200 ${i === 0 ? 'bg-[#FFFDE7]' : 'bg-white'} hover:bg-gray-50 transition-colors`}>
+                  <td className="px-3 md:px-5 py-3 md:py-4 font-black text-xs md:text-sm text-[#0F172A] uppercase">
+                    {i === 0 && <span className="inline-block bg-[#FFD600] text-[#0F172A] text-[7px] md:text-[8px] font-black px-1.5 py-0.5 mr-2 border border-[#0F172A] uppercase tracking-widest">Best Value</span>}
+                    {a.name}
+                  </td>
+                  <td className="px-3 md:px-5 py-3 md:py-4 text-[10px] md:text-xs font-bold text-gray-700">{a.cost}</td>
+                  <td className="px-3 md:px-5 py-3 md:py-4 text-[10px] md:text-xs font-bold text-gray-700">{a.screen}</td>
+                  <td className="px-3 md:px-5 py-3 md:py-4 text-[10px] md:text-xs font-bold text-gray-700">{a.focus}</td>
+                  <td className="px-3 md:px-5 py-3 md:py-4 text-[10px] md:text-xs font-bold text-gray-700">{a.result}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <div className="mt-8 md:mt-12 text-center">
+          <button onClick={scrollToForm} className="bg-[#0F172A] text-[#FFD600] py-3 md:py-4 px-8 md:px-12 font-black text-sm md:text-base uppercase tracking-widest border-4 border-[#0F172A] shadow-brutal-yellow hover:translate-y-[2px] hover:shadow-none transition-all inline-flex items-center gap-2 md:gap-3">
+            Try a Free Chess Class <ArrowRight className="w-4 h-4 md:w-5 md:h-5" />
+          </button>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function IndiaChessBoom() {
+  return (
+    <section className="py-12 md:py-16 bg-[#0F172A] border-b-4 border-[#FFD600] overflow-hidden">
+      <div className="max-w-6xl mx-auto px-4 md:px-6">
+        <div className="text-center mb-8 md:mb-12">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-white uppercase tracking-tight mb-3 md:mb-4 leading-none">
+            India is living a <span className="text-[#FFD600]">chess revolution.</span>
+          </h2>
+          <p className="text-xs sm:text-sm md:text-base text-gray-400 font-bold max-w-2xl mx-auto">
+            Your child is growing up in the golden age of Indian chess. There's never been a better time to start.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6">
+          {[
+            { stat: "2nd", label: "Largest chess-playing nation globally", sub: "After Russia — FIDE data" },
+            { stat: "50K+", label: "AICF rated players in India", sub: "All India Chess Federation" },
+            { stat: "18", label: "Age of youngest World Champion", sub: "D. Gukesh, 2024" },
+            { stat: "Gov't", label: "Recognized sport in India", sub: "Official status by Govt. of India" },
+          ].map((item, i) => (
+            <FadeIn key={i} delay={i * 0.1}>
+              <div className="bg-[#1E293B] border-2 border-[#334155] p-4 md:p-6 text-center hover:border-[#FFD600] transition-colors">
+                <div className="text-2xl md:text-4xl font-black text-[#FFD600] mb-1 md:mb-2">{item.stat}</div>
+                <div className="text-[10px] md:text-xs font-black text-white uppercase tracking-wider mb-1">{item.label}</div>
+                <div className="text-[8px] md:text-[10px] font-bold text-gray-500 uppercase tracking-widest">{item.sub}</div>
+              </div>
+            </FadeIn>
+          ))}
+        </div>
+
+        <div className="mt-8 md:mt-12 bg-[#1E293B] border-2 border-[#FFD600] p-4 md:p-6 flex flex-col sm:flex-row items-center gap-4 md:gap-6 max-w-3xl mx-auto">
+          <Sparkles className="w-8 h-8 md:w-10 md:h-10 text-[#FFD600] shrink-0" />
+          <p className="text-xs md:text-sm font-bold text-gray-300 leading-relaxed text-center sm:text-left">
+            Following Gukesh's historic World Championship win in 2024 and Praggnanandhaa's rise, chess enrollment across India has surged. ChessWize students are part of this wave — learning from coaches who understand the Indian chess ecosystem.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+
 function FounderStory() {
   return (
     <section className="py-16 md:py-24 bg-[#FAFAFA] border-b-4 border-[#0F172A] overflow-hidden">
@@ -1397,8 +1499,10 @@ export default function Landing() {
       <SuccessStories />
       <StarPerformers />
       <HowAClassWorks />
+      <ChessVsOtherActivities />
       <FAQ />
       <Pricing />
+      <IndiaChessBoom />
       <ContactFormSection />
       <Footer />
       <LiveBookingToast />

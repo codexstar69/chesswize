@@ -6,7 +6,7 @@ const WHATSAPP_URL = "https://wa.me/918400979997?text=Hi%2C%20I%27d%20like%20to%
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0F172A] pt-16 md:pt-24 pb-8 border-t-8 border-[#FFD600] relative overflow-hidden">
+    <footer className="bg-[#0F172A] pt-16 md:pt-24 pb-24 md:pb-8 border-t-8 border-[#FFD600] relative overflow-hidden">
       <div className="absolute inset-0 glow-yellow opacity-10 pointer-events-none" />
       <div className="absolute inset-0 bg-noise opacity-50 pointer-events-none" />
       <div className="max-w-7xl mx-auto px-6 relative z-10">
